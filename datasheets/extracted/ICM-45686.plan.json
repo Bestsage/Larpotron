@@ -1,0 +1,53 @@
+{
+  "cache_dir": "/var/home/bestsage/Documents/Larpotron/datasheets/extracted",
+  "created_at": "2026-11-20T17:08:33Z",
+  "execution": {
+    "completed_at": "2026-11-20T17:12:15Z",
+    "outcomes": [],
+    "started_at": "2026-11-20T17:08:33Z"
+  },
+  "mpn": "ICM-45686",
+  "pdf_path": "/var/home/bestsage/Documents/Larpotron/datasheets/ICM-45686_Accelerometer_Gyroscope_6_Axis_Sensor_I2C_I3C_SPI_Output.pdf",
+  "pdf_sha256": "sha256:e6da695b4c17cfae538e82c6df72fbe5caa2821fa01dff9614090d57ca07f559",
+  "plan_version": "1.0",
+  "scout_ref": "ICM-45686.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        15,
+        20,
+        21,
+        26,
+        51,
+        52,
+        54
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "ICM-45686.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "ICM-45686.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

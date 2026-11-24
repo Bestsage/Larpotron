@@ -1,0 +1,48 @@
+{
+  "categories": [],
+  "extraction_pages": {
+    "base": [
+      2,
+      3,
+      131,
+      132,
+      133,
+      135,
+      136,
+      137,
+      138,
+      139,
+      142,
+      145,
+      147,
+      148,
+      149,
+      154
+    ],
+    "pinout": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "metadata": {
+    "datasheet_date": "2018-07-11",
+    "datasheet_revision": "002-00124 Rev. *H",
+    "family_member_mpns": [
+      "S25FL256L",
+      "S25FL128L"
+    ],
+    "is_family_pdf": true,
+    "manufacturer": "Cypress Semiconductor",
+    "page_count": 161,
+    "source_url": null
+  },
+  "mpn": "S25FL256LAGNFV010",
+  "quality_verdict": {
+    "reason": null,
+    "verdict": "extractable"
+  }
+}

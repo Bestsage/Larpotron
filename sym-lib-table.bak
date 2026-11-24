@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ICM-45686") (type "KiCad") (uri "${KIPRJMOD}/Custom_symbols/ICM-45686.kicad_sym") (options "") (descr ""))
+	(lib (name "BMP-581") (type "KiCad") (uri "${KIPRJMOD}/Custom_symbols") (options "") (descr ""))
+)

@@ -1,0 +1,523 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:23Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "BST": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.3,
+          "notes": "MAX is SW + 6 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "BST_SW": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "EN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "FB": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "RT": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "SS_PG": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": "SS pin on TPS62933; PG pin on TPS62933P and TPS62933O",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "SW_DC": [
+        {
+          "condition": "DC",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 32,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "SW_transient": [
+        {
+          "condition": "transient < 10 ns",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 33,
+          "min": -3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "TJ": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -40,
+          "notes": "Operating junction temperature",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "Tstg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": "Storage temperature",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 32,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 44,
+          "section": "Packaging Information"
+        },
+        "mark": "RoHS",
+        "rating": "Yes"
+      }
+    ],
+    "description": "3.8-V to 30-V, 3-A synchronous buck converter with pulse frequency modulation in a SOT583 package",
+    "esd": {
+      "CDM": [
+        {
+          "condition": "ANSI/ESDA/JEDEC JS-002, all pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "\u00b1500 V",
+          "typ": 500,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": "ANSI/ESDA/JEDEC JS-001, all pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "\u00b12000 V",
+          "typ": 2000,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "step-down switching regulator",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 44,
+        "section": "Packaging Information"
+      },
+      "msl": 1,
+      "peak_reflow_c": 260
+    },
+    "package": {
+      "body_mm": {
+        "height": 0.6,
+        "length": 2.1,
+        "width": 1.6
+      },
+      "code": "SOT583-8",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 48,
+        "section": "Package Outline"
+      },
+      "pin_count": 8,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "BST": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": null,
+          "min": -0.1,
+          "notes": "MAX is SW + 5.5 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "BST_SW": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 5.5,
+          "min": -0.1,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "EN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 5.5,
+          "min": -0.1,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "FB": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 5.5,
+          "min": -0.1,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "IOUT": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 3,
+          "min": 0,
+          "notes": "TPS62933 and TPS62933x (TPS62932 is 2 A max)",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "SW_DC": [
+        {
+          "condition": "DC",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 30,
+          "min": -0.1,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "SW_transient": [
+        {
+          "condition": "transient < 10 ns",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 32,
+          "min": -3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "TJ": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 150,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 30,
+          "min": 3.8,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VOUT": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 22,
+          "min": 0.8,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "psi_jb": [
+        {
+          "condition": "JEDEC standard board",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "8.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 19.2,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "psi_jt": [
+        {
+          "condition": "JEDEC standard board",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "8.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 1.6,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_ja": [
+        {
+          "condition": "JEDEC standard board (simulated)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "8.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 112.2,
+          "unit": "\u00b0C/W"
+        },
+        {
+          "condition": "TI official EVM board (2 layer, 2-ounce copper thickness)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "8.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "R\u03b8JA_EVM tested on TI EVM",
+          "typ": 60.2,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jb": [
+        {
+          "condition": "JEDEC standard board",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "8.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 19.3,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jc": [
+        {
+          "condition": "Junction-to-case (top), JEDEC standard board",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "8.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 29.1,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  }
+}

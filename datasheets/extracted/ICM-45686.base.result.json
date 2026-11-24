@@ -1,0 +1,282 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:21Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "I_latchup": [
+        {
+          "condition": "JEDEC Class II (2) for VDDIO <= 1.98 V; JEDEC Class I (1) for VDDIO > 1.98 V",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 0.1,
+          "min": -0.1,
+          "notes": "\u00b1100 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "T_op": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": "Operating Temperature Range",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "T_stg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 4,
+          "min": -0.5,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDDIO": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 4,
+          "min": -0.5,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN_FSYNC_SCL_SDA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.5,
+          "notes": "Max is VDDIO + 0.5 V (symbolic; e.g. 2.3 V at VDDIO=1.8 V, 4.1 V at VDDIO=3.6 V)",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Ordering Information"
+        },
+        "mark": "RoHS",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Ordering Information"
+        },
+        "mark": "Green",
+        "rating": null
+      }
+    ],
+    "description": "High Performance Dual-Interface (UI + AUX) 6-Axis MEMS MotionTracking Device",
+    "esd": {
+      "CDM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "500 V (CDM)",
+          "typ": 500,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "2 kV (HBM)",
+          "typ": 2000,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "6-axis MEMS IMU (3-axis gyroscope + 3-axis accelerometer)",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 0.81,
+        "length": 3,
+        "width": 2.5
+      },
+      "code": "LGA-14",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 52,
+        "section": "10.2 Package Dimensions"
+      },
+      "pin_count": 14,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 20,
+            "section": "3.3.1 D.C. Electrical Characteristics"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": "Performance parameters are not applicable beyond Specified Temperature Range",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 20,
+            "section": "3.3.1 D.C. Electrical Characteristics"
+          },
+          "max": 3.6,
+          "min": 1.71,
+          "notes": null,
+          "typ": 1.8,
+          "unit": "V"
+        }
+      ],
+      "VDDIO": [
+        {
+          "condition": "I2C / SPI interface",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 20,
+            "section": "3.3.1 D.C. Electrical Characteristics"
+          },
+          "max": 3.6,
+          "min": 1.08,
+          "notes": "Minimum VDDIO is 1.1 V when using I3CSM interface",
+          "typ": 1.8,
+          "unit": "V"
+        },
+        {
+          "condition": "I3CSM interface",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 20,
+            "section": "3.3.1 D.C. Electrical Characteristics"
+          },
+          "max": 3.6,
+          "min": 1.1,
+          "notes": "When using I3CSM interface the minimum VDDIO value is 1.1V",
+          "typ": 1.8,
+          "unit": "V"
+        }
+      ],
+      "V_supply_noise": [
+        {
+          "condition": "VDD = 1.8 V or 3.6 V, up to 1 MHz",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 21,
+            "section": "3.3.2 A.C. Electrical Characteristics"
+          },
+          "max": 0.05,
+          "min": null,
+          "notes": "peak-peak",
+          "typ": 0.01,
+          "unit": "V"
+        }
+      ],
+      "t_supply_ramp": [
+        {
+          "condition": "Valid power-on RESET monotonic ramp; ramp rate 10% to 90% of final value",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 21,
+            "section": "3.3.2 A.C. Electrical Characteristics"
+          },
+          "max": 0.001,
+          "min": 1e-05,
+          "notes": null,
+          "typ": null,
+          "unit": "s"
+        }
+      ]
+    }
+  }
+}

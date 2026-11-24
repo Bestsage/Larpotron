@@ -1,0 +1,42 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:07:41Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "categories": [
+      "diode"
+    ],
+    "extraction_pages": {
+      "base": [
+        1,
+        2
+      ],
+      "diode": [
+        2,
+        3
+      ],
+      "pinout": [
+        1
+      ]
+    },
+    "metadata": {
+      "datasheet_date": null,
+      "datasheet_revision": null,
+      "family_member_mpns": [
+        "PRTR5V0U2X"
+      ],
+      "is_family_pdf": false,
+      "manufacturer": "TECH PUBLIC",
+      "page_count": 4,
+      "source_url": "www.sot23.com.tw"
+    },
+    "mpn": "PRTR5V0U2X,215",
+    "quality_verdict": {
+      "reason": "target MPN not found in PDF",
+      "verdict": "skip"
+    }
+  }
+}

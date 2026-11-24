@@ -1,0 +1,48 @@
+{
+  "cache_dir": "/var/home/bestsage/Documents/Larpotron/datasheets/extracted",
+  "created_at": "2026-11-20T17:08:33Z",
+  "execution": {
+    "completed_at": "2026-11-20T17:13:04Z",
+    "outcomes": [],
+    "started_at": "2026-11-20T17:08:33Z"
+  },
+  "mpn": "TPS259474ARPWR",
+  "pdf_path": "/var/home/bestsage/Documents/Larpotron/datasheets/TPS259474ARPWR_Hot_Swap_Voltage_Controllers_2.7-V_to_23-V_28-m_5.5-A_eFuse_with.pdf",
+  "pdf_sha256": "sha256:8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+  "plan_version": "1.0",
+  "scout_ref": "TPS259474ARPWR.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        68
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "TPS259474ARPWR.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        5,
+        6
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "TPS259474ARPWR.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

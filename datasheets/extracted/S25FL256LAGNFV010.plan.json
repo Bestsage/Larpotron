@@ -1,0 +1,62 @@
+{
+  "cache_dir": "/var/home/bestsage/Documents/Larpotron/datasheets/extracted",
+  "created_at": "2026-11-20T17:08:33Z",
+  "execution": {
+    "completed_at": "2026-11-20T17:12:15Z",
+    "outcomes": [],
+    "started_at": "2026-11-20T17:08:34Z"
+  },
+  "mpn": "S25FL256LAGNFV010",
+  "pdf_path": "/var/home/bestsage/Documents/Larpotron/datasheets/S25FL256LAGNFI010_-40\u2103~+85\u2103_100_000_cycles_133MHz_2.7V~3.6V_20_Years_20uA_256Mbit_Power-on.pdf",
+  "pdf_sha256": "sha256:4c45d29b2df51d40ecdd405e06eb6a075acdc1eed9349ad6d4ac14c2c1eaac54",
+  "plan_version": "1.0",
+  "scout_ref": "S25FL256LAGNFV010.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        2,
+        3,
+        131,
+        132,
+        133,
+        135,
+        136,
+        137,
+        138,
+        139,
+        142,
+        145,
+        147,
+        148,
+        149,
+        154
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "S25FL256LAGNFV010.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "S25FL256LAGNFV010.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

@@ -1,0 +1,774 @@
+{
+  "base": {
+    "absolute_max": {
+      "IO_LOGIC_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 0.008,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "TJ": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "Tstg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VBUS": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 14,
+          "min": -14,
+          "notes": "Voltage at any bus terminal (CANH or CANL)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VCC": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 5,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "V_Logic_Input": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 5,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "V_Logic_Output": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 5,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 34,
+          "section": "Package Option Addendum - Packaging Information"
+        },
+        "mark": "RoHS",
+        "rating": "Yes"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "1 Features"
+        },
+        "mark": "ISO 11898-2",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "1 Features"
+        },
+        "mark": "IEC 61000-4-2",
+        "rating": "\u00b112kV Contact Discharge (bus terminals)"
+      }
+    ],
+    "description": "3.3V CAN FD transceiver, normal mode only, up to 5 Mbps, SOT-23-8 package",
+    "esd": {
+      "CDM": [
+        {
+          "condition": "All pins, per JEDEC specification JESD22-C101",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "\u00b11500 V",
+          "typ": 1500,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": "All pins except CANH and CANL, per ANSI/ESDA/JEDEC JS-001",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "\u00b14000 V",
+          "typ": 4000,
+          "unit": "V"
+        },
+        {
+          "condition": "Pins CANH and CANL, per ANSI/ESDA/JEDEC JS-001",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "\u00b125000 V",
+          "typ": 25000,
+          "unit": "V"
+        }
+      ],
+      "IEC_61000_4_2": [
+        {
+          "condition": "CANH and CANL terminals to GND, Contact Discharge",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "\u00b112000 V; Section 5.2 table prints IEC 61400-4-2 (typo for IEC 61000-4-2 per Features and Section 6.3.8)",
+          "typ": 12000,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "3.3V CAN transceiver with CAN FD",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 34,
+        "section": "Package Option Addendum - Packaging Information"
+      },
+      "msl": 1,
+      "peak_reflow_c": 260
+    },
+    "package": {
+      "body_mm": {
+        "height": 1.45,
+        "length": 2.9,
+        "width": 1.6
+      },
+      "code": "SOT-23-8",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 45,
+        "section": "Mechanical Data - DCN (R-PDSO-G8)"
+      },
+      "pin_count": 8,
+      "pitch_mm": 0.65,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": [
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.1 Absolute Maximum Ratings"
+            },
+            "max": 5,
+            "min": -0.3,
+            "notes": "Logic input terminal voltage range V(Logic_Input)",
+            "typ": null,
+            "unit": "V"
+          }
+        ],
+        "alt_functions": [],
+        "description": "CAN transmit data input (LOW for dominant and HIGH for recessive bus states), integrated pull up",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "4 Pin Configuration and Functions"
+        },
+        "is_5v_tolerant": null,
+        "name": "TXD",
+        "notes": "TCAN332GDCNT uses the 8-pin SOT-23 (DCN) package (identical pinout to 8-pin SOIC D).",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Ground connection",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "4 Pin Configuration and Functions"
+        },
+        "is_5v_tolerant": null,
+        "name": "GND",
+        "notes": null,
+        "numbers": [
+          "2"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": [
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.1 Absolute Maximum Ratings"
+            },
+            "max": 5,
+            "min": -0.3,
+            "notes": "Supply Voltage range, VCC",
+            "typ": null,
+            "unit": "V"
+          }
+        ],
+        "alt_functions": [],
+        "description": "3.3-V supply voltage",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "4 Pin Configuration and Functions"
+        },
+        "is_5v_tolerant": null,
+        "name": "VCC",
+        "notes": null,
+        "numbers": [
+          "3"
+        ],
+        "power_domain": "VCC",
+        "recommended": [
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.3 Recommended Operating Conditions"
+            },
+            "max": 3.6,
+            "min": 3,
+            "notes": "Supply voltage, VCC",
+            "typ": null,
+            "unit": "V"
+          }
+        ],
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": [
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.1 Absolute Maximum Ratings"
+            },
+            "max": 5,
+            "min": -0.3,
+            "notes": "Logic output terminal voltage range, V(Logic_Output)",
+            "typ": null,
+            "unit": "V"
+          },
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.1 Absolute Maximum Ratings"
+            },
+            "max": 0.008,
+            "min": null,
+            "notes": "Logic output current, IO(LOGIC)",
+            "typ": null,
+            "unit": "A"
+          }
+        ],
+        "alt_functions": [],
+        "description": "CAN receive data output (LOW for dominant and HIGH for recessive bus states), tri-state",
+        "drive_strength": [
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.3 Recommended Operating Conditions"
+            },
+            "max": null,
+            "min": -0.002,
+            "notes": "IOH(LOGIC) Logic terminal HIGH level output current",
+            "typ": null,
+            "unit": "A"
+          },
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.3 Recommended Operating Conditions"
+            },
+            "max": 0.002,
+            "min": null,
+            "notes": "IOL(LOGIC) Logic terminal LOW level output current",
+            "typ": null,
+            "unit": "A"
+          }
+        ],
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "4 Pin Configuration and Functions"
+        },
+        "is_5v_tolerant": null,
+        "name": "RXD",
+        "notes": null,
+        "numbers": [
+          "4"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "tri_state"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "No Connect \u2013 Not internally connected",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "4 Pin Configuration and Functions"
+        },
+        "is_5v_tolerant": null,
+        "name": "NC",
+        "notes": null,
+        "numbers": [
+          "5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "not_connected"
+      },
+      {
+        "absolute_max": [
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.1 Absolute Maximum Ratings"
+            },
+            "max": 14,
+            "min": -14,
+            "notes": "Voltage at any bus terminal (CANH or CANL), V(BUS)",
+            "typ": null,
+            "unit": "V"
+          }
+        ],
+        "alt_functions": [],
+        "description": "Low level CAN bus line",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "4 Pin Configuration and Functions"
+        },
+        "is_5v_tolerant": null,
+        "name": "CANL",
+        "notes": null,
+        "numbers": [
+          "6"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": [
+          {
+            "condition": null,
+            "evidence": {
+              "confidence": "high",
+              "method": "table",
+              "page": 5,
+              "section": "5.1 Absolute Maximum Ratings"
+            },
+            "max": 14,
+            "min": -14,
+            "notes": "Voltage at any bus terminal (CANH or CANL), V(BUS)",
+            "typ": null,
+            "unit": "V"
+          }
+        ],
+        "alt_functions": [],
+        "description": "High level CAN bus line",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "4 Pin Configuration and Functions"
+        },
+        "is_5v_tolerant": null,
+        "name": "CANH",
+        "notes": null,
+        "numbers": [
+          "7"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "No Connect \u2013 Not internally connected",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "4 Pin Configuration and Functions"
+        },
+        "is_5v_tolerant": null,
+        "name": "NC",
+        "notes": null,
+        "numbers": [
+          "8"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "not_connected"
+      }
+    ],
+    "recommended_operating": {
+      "IOH_LOGIC": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": null,
+          "min": -0.002,
+          "notes": null,
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "IOL_LOGIC": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": 0.002,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VCC": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": 3.6,
+          "min": 3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "PD": [
+        {
+          "condition": "VCC = 3.3 V, TJ = 27\u00b0C, RL = 60 \u03a9, SHDN, S and STB at 0 V, Input to TXD at 500 kHz, 50% duty cycle square wave, CL(RXD) = 15 pF",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "DCN (SOT-23) 8-pin package; average power dissipation",
+          "typ": 0.065,
+          "unit": "W"
+        }
+      ],
+      "THYS": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Thermal shutdown hysteresis; DCN (SOT-23) 8-pin package",
+          "typ": 5,
+          "unit": "\u00b0C"
+        }
+      ],
+      "TSD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Thermal shutdown temperature; DCN (SOT-23) 8-pin package",
+          "typ": 175,
+          "unit": "\u00b0C"
+        }
+      ],
+      "psi_jb": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "DCN (SOT-23) 8-pin package",
+          "typ": 49.2,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "psi_jt": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "DCN (SOT-23) 8-pin package",
+          "typ": 11.9,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_ja": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "DCN (SOT-23) 8-pin package",
+          "typ": 154.4,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jb": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "DCN (SOT-23) 8-pin package",
+          "typ": 49.2,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jc": [
+        {
+          "condition": "Junction-to-case (top); R_thetaJC(bot) is N/A",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "DCN (SOT-23) 8-pin package",
+          "typ": 76.6,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-11-20T17:12:48Z",
+    "extractor_schema_version": "1.4",
+    "extractor_scout": null,
+    "plan_ref": "TCAN332GDCNT.plan.json",
+    "quality_score": 62
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2025-05",
+    "datasheet_revision": "SLLSEQ7F",
+    "family_ref": null,
+    "local_path": "/var/home/bestsage/Documents/Larpotron/datasheets/TCAN332GDCNT_High-Speed_CAN_Transceiver_with_CAN_FD_5Mbps_3.3V_supply_SOT-23-8_SOIC-8.pdf",
+    "manufacturer": "Texas Instruments",
+    "mpn": "TCAN332GDCNT",
+    "page_count": 47,
+    "sha256": "sha256:bb89f067e6a7902867bf6b82eaab762167f403ae8464a29ec4f318ab0c71628f",
+    "source_url": null
+  }
+}

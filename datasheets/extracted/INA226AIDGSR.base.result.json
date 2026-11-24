@@ -1,0 +1,411 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:17Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "IIN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 0.005,
+          "min": null,
+          "notes": "Input current into any pin (5 mA)",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "IOUT": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 0.01,
+          "min": null,
+          "notes": "Open-drain digital output current (10 mA)",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "TJ_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "Tstg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN_cm": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 40,
+          "min": -0.3,
+          "notes": "Common-Mode (VIN+ + VIN-) / 2 at IN+, IN\u2013 pins",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN_diff": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 40,
+          "min": -40,
+          "notes": "Differential (VIN+ - VIN-). IN+ and IN\u2013 can have a differential voltage between \u201340 V and 40 V, however voltage at these pins must not exceed \u20130.3 V to 40 V.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VSCL": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.3,
+          "notes": "MIN: GND - 0.3 V; MAX: VVS + 0.3 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VSDA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": "MIN: GND - 0.3 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VVBUS": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 40,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VVS_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 34,
+          "section": "Package Option Addendum - Packaging Information"
+        },
+        "mark": "RoHS",
+        "rating": "Yes"
+      }
+    ],
+    "description": "36V, 16-Bit, Ultra-Precise I2C Output Current, Voltage, and Power Monitor With Alert",
+    "esd": {
+      "CDM": [
+        {
+          "condition": "per ANSI/ESDA/JEDEC JS-002, all pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "\u00b11000 V",
+          "typ": 1000,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": "per ANSI/ESDA/JEDEC JS-001, all pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "\u00b12500 V",
+          "typ": 2500,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "current shunt and power monitor",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 34,
+        "section": "Package Option Addendum - Packaging Information"
+      },
+      "msl": 2,
+      "peak_reflow_c": 260
+    },
+    "package": {
+      "body_mm": {
+        "height": 1.1,
+        "length": 3,
+        "width": 3
+      },
+      "code": "VSSOP-10",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 38,
+        "section": "Package Outline DGS0010A"
+      },
+      "pin_count": 10,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VBUS": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.5 Electrical Characteristics"
+          },
+          "max": 36,
+          "min": 0,
+          "notes": "While the input range is 36 V, the full-scale range of the ADC scaling is 40.96 V. Do not apply more than 36 V.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VCM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 12,
+          "unit": "V"
+        }
+      ],
+      "VVS": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 3.3,
+          "unit": "V"
+        },
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "5.5 Electrical Characteristics"
+          },
+          "max": 5.5,
+          "min": 2.7,
+          "notes": "Operating supply range",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "psi_jb": [
+        {
+          "condition": "INA226 DGS (VSSOP), 10 pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Junction-to-board characterization parameter (YJB)",
+          "typ": 78.9,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "psi_jt": [
+        {
+          "condition": "INA226 DGS (VSSOP), 10 pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 3.5,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_ja": [
+        {
+          "condition": "INA226 DGS (VSSOP), 10 pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 144.6,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jb": [
+        {
+          "condition": "INA226 DGS (VSSOP), 10 pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 80.4,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jc_top": [
+        {
+          "condition": "INA226 DGS (VSSOP), 10 pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 53.3,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  }
+}

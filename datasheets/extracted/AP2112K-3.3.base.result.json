@@ -1,0 +1,222 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:06Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "TJ_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "Tlead_max": [
+        {
+          "condition": "Soldering, 10 Seconds",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 260,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "Tstg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": null,
+          "notes": "Published as VCC (Power Supply Voltage)",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "mark": "RoHS",
+        "rating": "2002/95/EC & 2011/65/EU (RoHS 2), Totally Lead-Free"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "mark": "Green",
+        "rating": "Halogen and Antimony Free"
+      }
+    ],
+    "description": "600mA CMOS LDO regulator with enable, 3.3V fixed output",
+    "esd": {
+      "HBM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 4000,
+          "unit": "V"
+        }
+      ],
+      "MM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 400,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "CMOS low dropout linear regulator",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 1.1,
+        "length": 2.8,
+        "width": 1.6
+      },
+      "code": "SOT25",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 14,
+        "section": "Package Outline Dimensions"
+      },
+      "pin_count": 5,
+      "pitch_mm": 0.95,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Recommended Operating Conditions"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Recommended Operating Conditions"
+          },
+          "max": 6,
+          "min": 2.5,
+          "notes": "Family-wide recommended VIN range; for 3.3V output variant, regulation requires VIN >= VOUT + VDROP (tested at 4.3V to 6.0V on page 8)",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "theta_ja": [
+        {
+          "condition": "SOT25, No Heatsink",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 184,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jc": [
+        {
+          "condition": "SOT25",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "AP2112-3.3 Electrical Characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 96,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  }
+}

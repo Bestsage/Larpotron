@@ -1,0 +1,422 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:17Z",
+  "model_tier": "A",
+  "model_id": "antigravity-inherit",
+  "data": [
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Frequency programming input. Float for 500 kHz, tie to GND for 1.2 MHz, or connect to an RT timing resistor. See Section 9.3.5 for details.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "7 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "RT",
+      "notes": null,
+      "numbers": [
+        "1"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Enable input to the converter. Driving EN high or leaving this pin floating enables the converter. An external resistor divider can be used to implement an adjustable VIN UVLO function.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "7 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "EN",
+      "notes": "Has internal pullup current source; can be left floating to enable.",
+      "numbers": [
+        "2"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 5.5,
+          "min": -0.1,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 32,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Supply input pin to internal LDO and high-side FET. Input bypass capacitors must be directly connected to this pin and GND.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "7 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "VIN",
+      "notes": null,
+      "numbers": [
+        "3"
+      ],
+      "power_domain": "VIN",
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 30,
+          "min": 3.8,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Ground pin. Connected to the source of the low-side FET as well as the ground pin for the controller circuit. Connect to system ground and the ground side of CIN and COUT. The path to CIN must be as short as possible.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "7 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "GND",
+      "notes": null,
+      "numbers": [
+        "4"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": "DC",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 32,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "transient < 10 ns",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 33,
+          "min": -3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Switching output of the convertor. Internally connected to the source of the high-side FET and drain of the low-side FET. Connect to the power inductor.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "7 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "SW",
+      "notes": null,
+      "numbers": [
+        "5"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": "DC",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 30,
+          "min": -0.1,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "transient < 10 ns",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 32,
+          "min": -3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": "switching",
+      "type": "output"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": "BST",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.3,
+          "notes": "MAX = SW + 6 V",
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "BST - SW",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Bootstrap capacitor connection for high-side FET driver. Connect a high-quality, 100-nF ceramic capacitor from this pin to the SW pin.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "7 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "BST",
+      "notes": null,
+      "numbers": [
+        "6"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": "BST",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": null,
+          "min": -0.1,
+          "notes": "MAX = SW + 5.5 V",
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "BST - SW",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 5.5,
+          "min": -0.1,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": null,
+      "type": "passive"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": "Listed as SS/PG in Table 8.1",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "TPS62932, TPS62933, and TPS62933F soft-start control pin. An external capacitor connected to this pin sets the internal voltage reference rising time. See Section 9.3.7 for details. A minimum 6.8-nF ceramic capacitor must be connected at this pin, which sets the minimum soft-start time to approximately 1 ms. Do not float.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "7 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "SS",
+      "notes": "Do not float; connect a minimum 6.8-nF ceramic capacitor to GND. Pin 7 is PG on TPS62933P and TPS62933O variants.",
+      "numbers": [
+        "7"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Output feedback input. Connect FB to the tap of an external resistor divider from the output to GND to set output voltage.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "7 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "FB",
+      "notes": null,
+      "numbers": [
+        "8"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "8.3 Recommended Operating Conditions"
+          },
+          "max": 5.5,
+          "min": -0.1,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": null,
+      "type": "input"
+    }
+  ]
+}

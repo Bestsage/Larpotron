@@ -1,0 +1,236 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:26Z",
+  "model_tier": "A",
+  "model_id": "antigravity-inherit",
+  "data": [
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Serial Clock Line for I2C/SPI bus",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "SCL/SPI_SCK",
+      "notes": "Operates in I2C FAST (400 KHz) or SPI mode.",
+      "numbers": [
+        "1"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Power Supply",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "VDD",
+      "notes": "Power supply of the ASIC. VDD and CAP pins are shorted together inside the device.",
+      "numbers": [
+        "2"
+      ],
+      "power_domain": "VDD",
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Not Connected",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "NC",
+      "notes": null,
+      "numbers": [
+        "3",
+        "6",
+        "7",
+        "8",
+        "12",
+        "14"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "not_connected"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Chip Select line for SPI (active low). Tie to VDDIO for I2C Interface",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "SPI_CS",
+      "notes": "Tie to VDDIO for I2C Interface.",
+      "numbers": [
+        "4"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "SPI Serial Data Out",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "SPI_SDO",
+      "notes": null,
+      "numbers": [
+        "5"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "output"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Connect to Ground",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "GND",
+      "notes": null,
+      "numbers": [
+        "9",
+        "11"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Connect a 10uF capacitor for SET/RESET",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "CAP",
+      "notes": "Supply input for SET/RESET coil; VDD and CAP pins are shorted together inside the device. Recommend minimum 10 uF low ESR capacitor placed in close proximity to the CAP pin.",
+      "numbers": [
+        "10"
+      ],
+      "power_domain": "VDD",
+      "recommended": null,
+      "subtype": null,
+      "type": "passive"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Power supply for I2C and INT",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "VDDIO",
+      "notes": "Power supply of the digital interface of the ASIC.",
+      "numbers": [
+        "13"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Interrupt Output",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "INT",
+      "notes": "Active High. Held as hi-Z until an interrupt function is enabled.",
+      "numbers": [
+        "15"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "output"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Serial Data Line for I2C/SPI bus",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 9,
+        "section": "Pin Description: LGA Package"
+      },
+      "is_5v_tolerant": null,
+      "name": "SDA/SPI_SDI",
+      "notes": "Operates in I2C FAST (400 KHz) or SPI mode (including 3-wire SPI read mode).",
+      "numbers": [
+        "16"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "bidirectional"
+    }
+  ]
+}

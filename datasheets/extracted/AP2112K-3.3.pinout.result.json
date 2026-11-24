@@ -1,0 +1,120 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:08:55Z",
+  "model_tier": "A",
+  "model_id": "antigravity-inherit",
+  "data": [
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Input Voltage",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 2,
+        "section": "Pin Descriptions"
+      },
+      "is_5v_tolerant": null,
+      "name": "VIN",
+      "notes": "SOT25 package selected for AP2112K-3.3 (per Ordering Information, page 12).",
+      "numbers": [
+        "1"
+      ],
+      "power_domain": "VIN",
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "GND",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 2,
+        "section": "Pin Descriptions"
+      },
+      "is_5v_tolerant": null,
+      "name": "GND",
+      "notes": null,
+      "numbers": [
+        "2"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Chip Enable, H \u2013 normal work, L \u2013 shutdown output",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 2,
+        "section": "Pin Descriptions"
+      },
+      "is_5v_tolerant": null,
+      "name": "EN",
+      "notes": "Internal 3.0 M\u03a9 pull-down resistor to GND (page 2 Functional Block Diagram, page 8 RPD).",
+      "numbers": [
+        "3"
+      ],
+      "power_domain": "VIN",
+      "recommended": null,
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "No Connection",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "curve",
+        "page": 1,
+        "section": "Pin Assignments"
+      },
+      "is_5v_tolerant": null,
+      "name": "NC",
+      "notes": "Labeled NC on SOT25 Pin Assignments diagram (page 1); listed as '\u2014' in Pin Descriptions table (page 2).",
+      "numbers": [
+        "4"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "not_connected"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Output Voltage",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 2,
+        "section": "Pin Descriptions"
+      },
+      "is_5v_tolerant": null,
+      "name": "VOUT",
+      "notes": "3.3V fixed output, 600mA minimum continuous load current; includes 60\u03a9 auto-discharge to GND when disabled.",
+      "numbers": [
+        "5"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "power_out"
+    }
+  ]
+}

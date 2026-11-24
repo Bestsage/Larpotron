@@ -1,0 +1,413 @@
+{
+  "version": 1,
+  "project": "Larpotron.kicad_pro",
+  "current": "2026-11-23_1020",
+  "runs": {
+    "2026-11-15_2040": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:935cd9a938a83d062c249a0cd00fdc36e085796fc5cc972d1134ac31d3baf5ff"
+      },
+      "outputs": {
+        "schematic": "schematic.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-15T20:40:02+01:00",
+      "pinned": false
+    },
+    "2026-11-15_2220": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:a667b21288f7a1a17defa914bd4de4b2f0655ef7c8b2ae717b16bd43cdbf599a"
+      },
+      "outputs": {
+        "schematic": "schematic.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-15T22:20:18+01:00",
+      "pinned": false
+    },
+    "2026-11-16_1020": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:97d6c5f47f2730302517f050f9724bed736fdfd42d37c3214f1cd1ddc327aeda"
+      },
+      "outputs": {
+        "schematic": "schematic.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-16T10:20:04+01:00",
+      "pinned": false
+    },
+    "2026-11-16_1135": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:eae89c695de7828a49770372928f2251d1e4a7abff0ba1b76b328cc0cc25ccea",
+        "Larpotron.kicad_pcb": "sha256:e1194ff5817c81d530cea1379f21309f7f05f0efe8730d5b13d927ffbb740869"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-16T11:48:47+01:00",
+      "pinned": false
+    },
+    "2026-11-16_1304": {
+      "source_hashes": {
+        "Larpotron.kicad_pcb": "sha256:92943c83146554adfd8547bc4a2d77ed0d97749b5eb4d25cfe8fe93933922940"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json"
+      },
+      "scripts": {
+        "pcb": "analyze_pcb.py Larpotron.kicad_pcb"
+      },
+      "generated": "2026-11-16T13:04:43+01:00",
+      "pinned": false
+    },
+    "2026-11-16_1346": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:3526dade6aa583d42c93d4e2cfbb51db14a8d54f99033c35808a2115ebd95aab"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-16T13:46:18+01:00",
+      "pinned": false
+    },
+    "2026-11-16_2133": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:3c72459ea4807a52181a565cf39524bce3b9bcdbb5b216489ec9043b577da19e"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-16T21:33:22+01:00",
+      "pinned": false
+    },
+    "2026-11-16_2133-2": {
+      "source_hashes": {
+        "Larpotron.kicad_pcb": "sha256:749bc8ec5b23351b2e0f805854354fce3e3352cce55cc39614e4572c6037f4ef",
+        "schematic.json": "sha256:9e52538575f3b3d6b6d68274acecdb24fb888abd6f7629cf18238d9eb9466391",
+        "pcb.json": "sha256:3ec7db340f0f50822bd4d9b64f8db9598ed8402d5c6b1aaff8433ca55fc9454a"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json"
+      },
+      "scripts": {
+        "pcb": "analyze_pcb.py Larpotron.kicad_pcb"
+      },
+      "generated": "2026-11-16T21:33:45+01:00",
+      "pinned": false
+    },
+    "2026-11-16_2212": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:1aea3129ff6386fee23babd21e62ce18f883c26fc6449016ddfed9660fa381a6",
+        "Larpotron.kicad_pcb": "sha256:4663c7c37ba09f15f8a1ee0102b7899bd102f8b51740111369c7829220ddd341"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-16T22:12:46+01:00",
+      "pinned": false
+    },
+    "2026-11-16_2212-2": {
+      "source_hashes": {
+        "schematic.json": "sha256:52a9c357a6963a5a445662bcff9a40c508dd1f8c6324ca0d91e92271c899b8d5",
+        "pcb.json": "sha256:1daae67da0666b9598c5c3b12442b7a9f7b1268578f3e8d7cd0c520c9892c4ce"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json"
+      },
+      "scripts": {
+        "emc": "analyze_emc.py"
+      },
+      "generated": "2026-11-16T22:12:46+01:00",
+      "pinned": false
+    },
+    "2026-11-16_2235": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:1aea3129ff6386fee23babd21e62ce18f883c26fc6449016ddfed9660fa381a6"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-16T22:35:51+01:00",
+      "pinned": false
+    },
+    "2026-11-16_2236": {
+      "source_hashes": {
+        "Larpotron.kicad_pcb": "sha256:9306ad46b122e7b8d1cfec2418b360a38628fa3b1129d27cf350ab1c72b55f21"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json"
+      },
+      "scripts": {
+        "pcb": "analyze_pcb.py Larpotron.kicad_pcb"
+      },
+      "generated": "2026-11-16T22:36:16+01:00",
+      "pinned": false
+    },
+    "2026-11-16_2236-2": {
+      "source_hashes": {
+        "schematic.json": "sha256:8dea8c3b7cb92fb30c5c285d3441e45981faf9f0d14e4c3180265bfb74053e3f",
+        "pcb.json": "sha256:6622f10322a4e4c1c7d7ee22af5889045d4b28fc0cf6299196185d7c1279e94c"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json"
+      },
+      "scripts": {
+        "emc": "analyze_emc.py"
+      },
+      "generated": "2026-11-16T22:36:17+01:00",
+      "pinned": false
+    },
+    "2026-11-19_2004": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:23d18fc684487fc214927cab8f8ca8399070675bf3b0a765d60500d7c39d42b5"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-19T20:04:05+01:00",
+      "pinned": false
+    },
+    "2026-11-19_2004-2": {
+      "source_hashes": {
+        "Larpotron.kicad_pcb": "sha256:038f684564c32ebb1b5b4a1605b1fab666b68eb3ecf0068fb6500cd94592d1c2",
+        "schematic.json": "sha256:17655c1b5f12e71b8445c2850952852c2daddb5a429bb35a37cbfa87ca09414f",
+        "pcb.json": "sha256:b1084bac23a37408b281f567089589bdbd1a24099c70614f81d8ed795424d8a1"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "pcb": "analyze_pcb.py Larpotron.kicad_pcb"
+      },
+      "generated": "2026-11-19T20:04:26+01:00",
+      "pinned": false
+    },
+    "2026-11-20_1645": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:0440dbb97b41bb6e9fc8c834670a9a00f4794e30ee30958eff737d2bed91a6c4"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-20T16:45:39+01:00",
+      "pinned": false
+    },
+    "2026-11-22_1635": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:c9df4e2c5fc9f1efa28a3a207b700c5866f06d7a0df8f90aed9763dae802080b"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-22T16:35:37+01:00",
+      "pinned": false
+    },
+    "2026-11-22_1647": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:a50d303c34284cb8b9c401783716e389902a6b4231658d8a0b5a3047674f41de"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-22T16:47:21+01:00",
+      "pinned": false
+    },
+    "2026-11-22_1652": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:7d87111e774893d1ed14eec165e1951bcd5ce1f557b62d0b687d3dd5dd8c58c6"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-22T16:52:01+01:00",
+      "pinned": false
+    },
+    "2026-11-22_1655": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:7d87111e774893d1ed14eec165e1951bcd5ce1f557b62d0b687d3dd5dd8c58c6"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-22T16:55:55+01:00",
+      "pinned": false
+    },
+    "2026-11-22_1713": {
+      "source_hashes": {
+        "Larpotron.kicad_pcb": "sha256:1dae0a1f8f0c566dd8058d0181aa0016866655f1079c17a68961ad66cefbc229"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "pcb": "analyze_pcb.py Larpotron.kicad_pcb"
+      },
+      "generated": "2026-11-22T17:28:39+01:00",
+      "pinned": false
+    },
+    "2026-11-22_1728": {
+      "source_hashes": {
+        "schematic.json": "sha256:eb236f3927e49afee8362ac8e882885731b0de71c0985a17cb6687b6600aa375",
+        "pcb.json": "sha256:98f73ace018e442fa0b693d8c9409332167ad93df0d24dc138a19170d1d7add1",
+        "Larpotron.kicad_pcb": "sha256:7e0940a7148553b69cfcec336b93d79864606117d0b56fae893ca4730a92585c"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "emc": "analyze_emc.py"
+      },
+      "generated": "2026-11-22T17:30:41+01:00",
+      "pinned": false
+    },
+    "2026-11-23_1020": {
+      "source_hashes": {
+        "Larpotron.kicad_sch": "sha256:f44657463b0ff7af3e85c9ff9ba209215ca3f27a6c0bbda538070cb7049b03ee"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json",
+        "pcb": "pcb.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json",
+        "emc": "emc.json",
+        "gerber": "gerber.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Larpotron.kicad_sch"
+      },
+      "generated": "2026-11-23T10:20:13+01:00",
+      "pinned": false
+    }
+  }
+}

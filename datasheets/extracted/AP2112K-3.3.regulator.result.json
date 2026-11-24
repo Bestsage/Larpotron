@@ -1,0 +1,214 @@
+{
+  "task_id": "regulator",
+  "schema_version": "0.3",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:06Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "cin_min": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 2,
+          "section": "Typical Applications Circuit"
+        },
+        "max": null,
+        "min": 1e-06,
+        "notes": "1.0\u00b5F recommended; X7R or X5R dielectric recommended if ceramic capacitor is selected",
+        "typ": null,
+        "unit": "F"
+      }
+    ],
+    "cout_min": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "max": null,
+        "min": 1e-06,
+        "notes": "Stable with 1.0\u00b5F Ceramic (X7R or X5R recommended), Tantalum, or Aluminum Electrolytic capacitor",
+        "typ": null,
+        "unit": "F"
+      }
+    ],
+    "dropout": [
+      {
+        "condition": "IOUT = 10mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 0.008,
+        "min": null,
+        "notes": null,
+        "typ": 0.005,
+        "unit": "V"
+      },
+      {
+        "condition": "IOUT = 300mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 0.2,
+        "min": null,
+        "notes": null,
+        "typ": 0.125,
+        "unit": "V"
+      },
+      {
+        "condition": "IOUT = 600mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 0.4,
+        "min": null,
+        "notes": null,
+        "typ": 0.25,
+        "unit": "V"
+      }
+    ],
+    "enable_pin": "3",
+    "iout_max": [
+      {
+        "condition": "VIN = 4.3V, VOUT = 3.251V to 3.350V",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": null,
+        "min": 0.6,
+        "notes": "Guaranteed minimum continuous output current (600mA min)",
+        "typ": null,
+        "unit": "A"
+      }
+    ],
+    "line_regulation": [
+      {
+        "condition": "4.3V <= VIN <= 6V, IOUT = 30mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 0.1,
+        "min": -0.1,
+        "notes": "Datasheet unit is %/V (-0.1 min, 0.02 typ, 0.1 max %/V)",
+        "typ": 0.02,
+        "unit": "%"
+      }
+    ],
+    "load_regulation": [
+      {
+        "condition": "VIN = 4.3V, 1mA <= IOUT <= 600mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 1,
+        "min": -1,
+        "notes": "Datasheet unit is %/A (-1 min, 0.2 typ, 1 max %/A)",
+        "typ": 0.2,
+        "unit": "%"
+      }
+    ],
+    "psrr": [
+      {
+        "condition": "Ripple 0.5Vp-p, VIN = 4.3V, IOUT = 100mA, f = 100Hz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": null,
+        "min": null,
+        "notes": null,
+        "typ": 65,
+        "unit": "dB"
+      },
+      {
+        "condition": "Ripple 0.5Vp-p, VIN = 4.3V, IOUT = 100mA, f = 1kHz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": null,
+        "min": null,
+        "notes": null,
+        "typ": 65,
+        "unit": "dB"
+      }
+    ],
+    "stability_conditions": {
+      "cap_types_allowed": [
+        "ceramic_x5r",
+        "ceramic_x7r",
+        "tantalum",
+        "electrolytic"
+      ],
+      "esr_range": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 2,
+        "section": "Typical Applications Circuit (Note 4)"
+      },
+      "notes": "Stable with 1.0\u00b5F Ceramic (X7R or X5R recommended), Tantalum, and Aluminum Electrolytic capacitors"
+    },
+    "topology": "ldo",
+    "vin_range": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 3,
+          "section": "Recommended Operating Conditions"
+        },
+        "max": 6,
+        "min": 2.5,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      }
+    ],
+    "vout_range": [
+      {
+        "condition": "VIN = 4.3V, 1mA <= IOUT <= 30mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 3.3495,
+        "min": 3.2505,
+        "notes": "VOUT * 98.5% to VOUT * 101.5% (\u00b11.5% accuracy)",
+        "typ": 3.3,
+        "unit": "V"
+      }
+    ]
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "base": {
+    "absolute_max": {
+      "Tstg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 9,
+            "section": "ABSOLUTE MAXIMUM RATINGS*"
+          },
+          "max": 125,
+          "min": -55,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 9,
+            "section": "ABSOLUTE MAXIMUM RATINGS*"
+          },
+          "max": 3.6,
+          "min": -0.5,
+          "notes": "Listed as 'Supply Voltage -0.5 to +3.6V' in Absolute Maximum Ratings",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "FEATURES"
+        },
+        "mark": "RoHS",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "DESCRIPTION"
+        },
+        "mark": "AEC-Q100",
+        "rating": null
+      }
+    ],
+    "description": "\u00b18 Gauss, high performance 3-axis magnetic sensor with I2C/SPI interface",
+    "family": "3-axis magnetic sensor",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 19,
+        "section": "SOLDERING RECOMMENDATIONS"
+      },
+      "msl": 3,
+      "peak_reflow_c": 260
+    },
+    "package": {
+      "body_mm": {
+        "height": 1,
+        "length": 3,
+        "width": 3
+      },
+      "code": "LGA-16",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 20,
+        "section": "PACKAGE DRAWING (LGA package)"
+      },
+      "pin_count": 16,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial Clock Line for I2C/SPI bus",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "SCL/SPI_SCK",
+        "notes": "Operates in I2C FAST (400 KHz) or SPI mode.",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Power Supply",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDD",
+        "notes": "Power supply of the ASIC. VDD and CAP pins are shorted together inside the device.",
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Not Connected",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "NC",
+        "notes": null,
+        "numbers": [
+          "3",
+          "6",
+          "7",
+          "8",
+          "12",
+          "14"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "not_connected"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Chip Select line for SPI (active low). Tie to VDDIO for I2C Interface",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "SPI_CS",
+        "notes": "Tie to VDDIO for I2C Interface.",
+        "numbers": [
+          "4"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "SPI Serial Data Out",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "SPI_SDO",
+        "notes": null,
+        "numbers": [
+          "5"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Connect to Ground",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "GND",
+        "notes": null,
+        "numbers": [
+          "9",
+          "11"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Connect a 10uF capacitor for SET/RESET",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "CAP",
+        "notes": "Supply input for SET/RESET coil; VDD and CAP pins are shorted together inside the device. Recommend minimum 10 uF low ESR capacitor placed in close proximity to the CAP pin.",
+        "numbers": [
+          "10"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": null,
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Power supply for I2C and INT",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDDIO",
+        "notes": "Power supply of the digital interface of the ASIC.",
+        "numbers": [
+          "13"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Interrupt Output",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "INT",
+        "notes": "Active High. Held as hi-Z until an interrupt function is enabled.",
+        "numbers": [
+          "15"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial Data Line for I2C/SPI bus",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "Pin Description: LGA Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "SDA/SPI_SDI",
+        "notes": "Operates in I2C FAST (400 KHz) or SPI mode (including 3-wire SPI read mode).",
+        "numbers": [
+          "16"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      }
+    ],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "SPECIFICATIONS"
+          },
+          "max": 105,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "SPECIFICATIONS"
+          },
+          "max": 3.6,
+          "min": 2.8,
+          "notes": null,
+          "typ": 3,
+          "unit": "V"
+        }
+      ],
+      "VDDIO": [
+        {
+          "condition": "I2C interface and INT",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "SPECIFICATIONS"
+          },
+          "max": 3.6,
+          "min": 2.8,
+          "notes": null,
+          "typ": 3,
+          "unit": "V"
+        }
+      ]
+    }
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-11-20T17:12:15Z",
+    "extractor_schema_version": "1.4",
+    "extractor_scout": null,
+    "plan_ref": "MMC5983MA.plan.json",
+    "quality_score": 58
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2019-02-25",
+    "datasheet_revision": "Rev. A",
+    "family_ref": null,
+    "local_path": "/var/home/bestsage/Documents/Larpotron/datasheets/MMC5983MA_-40\u2103~+105\u2103_18bit_2.8V~3.6V_450uA_I2C\u3001SPI_\u00b18Gs_\u00b18Gs_LGA-16(3x3)_3D_Magnetic.pdf",
+    "manufacturer": "MEMSIC",
+    "mpn": "MMC5983MA",
+    "page_count": 20,
+    "sha256": "sha256:8d0abc35d0d5b94a9a8e071f0b9daf7c45d6923bfe3b52373e24a252431f7090",
+    "source_url": null
+  }
+}

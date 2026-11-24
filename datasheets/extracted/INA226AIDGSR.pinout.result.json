@@ -1,0 +1,320 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:11Z",
+  "model_tier": "A",
+  "model_id": "antigravity-inherit",
+  "data": [
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Address pin. Connect to GND, SCL, SDA, or VS. Table 6-2 shows pin settings and corresponding addresses.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "A1",
+      "notes": null,
+      "numbers": [
+        "1"
+      ],
+      "power_domain": "VS",
+      "recommended": null,
+      "subtype": "digital",
+      "type": "input"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Address pin. Connect to GND, SCL, SDA, or VS. Table 6-2 shows pin settings and corresponding addresses.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "A0",
+      "notes": null,
+      "numbers": [
+        "2"
+      ],
+      "power_domain": "VS",
+      "recommended": null,
+      "subtype": "digital",
+      "type": "input"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Multi-functional alert, open-drain output.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "Alert",
+      "notes": null,
+      "numbers": [
+        "3"
+      ],
+      "power_domain": "VS",
+      "recommended": null,
+      "subtype": "open_drain",
+      "type": "open_collector"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": -0.3,
+          "notes": "Published as GND - 0.3 V to 6 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Serial bus data line, open-drain input/output.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "SDA",
+      "notes": null,
+      "numbers": [
+        "4"
+      ],
+      "power_domain": "VS",
+      "recommended": null,
+      "subtype": "open_drain",
+      "type": "bidirectional"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Serial bus clock line, open-drain input.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "SCL",
+      "notes": "Absolute maximum rating published as GND - 0.3 V to VVS + 0.3 V",
+      "numbers": [
+        "5"
+      ],
+      "power_domain": "VS",
+      "recommended": null,
+      "subtype": "open_drain",
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 6,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Power supply, 2.7V to 5.5V.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "VS",
+      "notes": null,
+      "numbers": [
+        "6"
+      ],
+      "power_domain": "VS",
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "4 Pin Configuration and Functions"
+          },
+          "max": 5.5,
+          "min": 2.7,
+          "notes": "2.7V to 5.5V operating supply range from Table 4-1 and Section 5.5; 3.3V nominal from Section 5.3",
+          "typ": 3.3,
+          "unit": "V"
+        }
+      ],
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Ground.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "GND",
+      "notes": null,
+      "numbers": [
+        "7"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": "ground",
+      "type": "power_in"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 40,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Bus voltage input.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "VBUS",
+      "notes": null,
+      "numbers": [
+        "8"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": "analog",
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": "Common-mode (VIN+ + VIN-) / 2 and per-pin voltage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 40,
+          "min": -0.3,
+          "notes": "Differential (VIN+ - VIN-) abs max is -40 V to 40 V; pin voltage must not exceed -0.3 V to 40 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Connect to load side of shunt resistor.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "IN-",
+      "notes": null,
+      "numbers": [
+        "9"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": "analog",
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": "Common-mode (VIN+ + VIN-) / 2 and per-pin voltage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 40,
+          "min": -0.3,
+          "notes": "Differential (VIN+ - VIN-) abs max is -40 V to 40 V; pin voltage must not exceed -0.3 V to 40 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Connect to supply side of shunt resistor.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "IN+",
+      "notes": null,
+      "numbers": [
+        "10"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": "analog",
+      "type": "input"
+    }
+  ]
+}

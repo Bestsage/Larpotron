@@ -1,0 +1,53 @@
+{
+  "cache_dir": "/var/home/bestsage/Documents/Larpotron/datasheets/extracted",
+  "created_at": "2026-11-20T17:08:33Z",
+  "execution": {
+    "completed_at": "2026-11-20T17:12:56Z",
+    "outcomes": [],
+    "started_at": "2026-11-20T17:08:33Z"
+  },
+  "mpn": "BMP581",
+  "pdf_path": "/var/home/bestsage/Documents/Larpotron/datasheets/BMP581_Pressure_Sensor_4.35PSI_~_18.13PSI_(30kPa_~_125kPa)_Absolute_10-WFLGA.pdf",
+  "pdf_sha256": "sha256:ddcf4202c4fdf2ab6ad86f22b67ba4d2471d76b9ce510397cacfe398400ab439",
+  "plan_version": "1.0",
+  "scout_ref": "BMP581.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        68,
+        69,
+        70,
+        71
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "BMP581.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        46
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "BMP581.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

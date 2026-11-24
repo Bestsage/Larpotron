@@ -1,0 +1,736 @@
+{
+  "base": {
+    "absolute_max": {
+      "I_latchup": [
+        {
+          "condition": "JEDEC Class II (2) for VDDIO <= 1.98 V; JEDEC Class I (1) for VDDIO > 1.98 V",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 0.1,
+          "min": -0.1,
+          "notes": "\u00b1100 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "T_op": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": "Operating Temperature Range",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "T_stg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 4,
+          "min": -0.5,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDDIO": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": 4,
+          "min": -0.5,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN_FSYNC_SCL_SDA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.5,
+          "notes": "Max is VDDIO + 0.5 V (symbolic; e.g. 2.3 V at VDDIO=1.8 V, 4.1 V at VDDIO=3.6 V)",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Ordering Information"
+        },
+        "mark": "RoHS",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Ordering Information"
+        },
+        "mark": "Green",
+        "rating": null
+      }
+    ],
+    "description": "High Performance Dual-Interface (UI + AUX) 6-Axis MEMS MotionTracking Device",
+    "esd": {
+      "CDM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "500 V (CDM)",
+          "typ": 500,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 26,
+            "section": "3.7 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "2 kV (HBM)",
+          "typ": 2000,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "6-axis MEMS IMU (3-axis gyroscope + 3-axis accelerometer)",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 0.81,
+        "length": 3,
+        "width": 2.5
+      },
+      "code": "LGA-14",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 52,
+        "section": "10.2 Package Dimensions"
+      },
+      "pin_count": 14,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [
+          {
+            "af_code": null,
+            "name": "AP_SDO",
+            "peripheral": "SPI",
+            "role": "SDO"
+          },
+          {
+            "af_code": null,
+            "name": "AP_AD0",
+            "peripheral": "I2C",
+            "role": "AD0"
+          },
+          {
+            "af_code": null,
+            "name": "AP_AD0",
+            "peripheral": "I3C",
+            "role": "AD0"
+          }
+        ],
+        "description": "AP_SDO: AP SPI serial data output (4-wire mode); AP_AD0: AP I3CSM / I2C slave address LSB",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 27,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "AP_SDO / AP_AD0",
+        "notes": "By default, internal weak pull-up is enabled. Supports internal pull-up/pull-down via pads_ap_sdo_pe_trim_d2a[0] and pads_ap_sdo_pud_trim_d2a[0]. Disable internal pull-up when AP interface is active.",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [
+          {
+            "af_code": null,
+            "name": "AUX1_SDIO",
+            "peripheral": "AUX1_SPI",
+            "role": "SDIO"
+          },
+          {
+            "af_code": null,
+            "name": "AUX1_SDI",
+            "peripheral": "AUX1_SPI",
+            "role": "SDI"
+          },
+          {
+            "af_code": null,
+            "name": "MAS_DA",
+            "peripheral": "I2C_MASTER",
+            "role": "SDA"
+          }
+        ],
+        "description": "RESV: No Connect or Connect to VDDIO or Connect to GND (Single Interface Mode); AUX1_SDIO: AUX1 SPI serial data IO (3-wire mode); AUX1_SDI: AUX1 SPI serial data input (4-wire mode); MAS_DA: I2C serial master data",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 27,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "RESV / AUX1_SDIO / AUX1_SDI / MAS_DA",
+        "notes": "By default, internal weak pull-up is enabled. Disable internal pull-up if AUX1 interface is active or if connected to VDDIO/GND; leave enabled if No Connect.",
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [
+          {
+            "af_code": null,
+            "name": "AUX1_SCLK",
+            "peripheral": "AUX1_SPI",
+            "role": "SCLK"
+          },
+          {
+            "af_code": null,
+            "name": "MAS_CLK",
+            "peripheral": "I2C_MASTER",
+            "role": "SCL"
+          }
+        ],
+        "description": "RESV: No Connect or Connect to VDDIO or Connect to GND (Single Interface Mode); AUX1_SCLK: AUX1 SPI serial clock; MAS_CLK: I2C serial master clock",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 27,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "RESV / AUX1_SCLK / MAS_CLK",
+        "notes": "By default, internal weak pull-up is enabled. Disable internal pull-up if AUX1 interface is active or if connected to VDDIO/GND; leave enabled if No Connect.",
+        "numbers": [
+          "3"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "INT1: Interrupt 1 (can be push-pull or open drain); INT: All interrupts mapped to pin 4",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 28,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "INT1 / INT",
+        "notes": "By default, internal pull-up is disabled. Supports internal pull-up/pull-down via pads_int1_tp0_tp_pe_trim_d2a[0] and pads_int1_tp0_tp_pud_trim_d2a[0].",
+        "numbers": [
+          "4"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "VDDIO: IO power supply voltage",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 28,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDDIO",
+        "notes": "Operating range 1.08V to 3.6V (minimum 1.1V when using I3CSM interface). Bypass with 0.1 uF X7R capacitor to GND.",
+        "numbers": [
+          "5"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "GND: Power supply ground",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 28,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "GND",
+        "notes": null,
+        "numbers": [
+          "6"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "RESV: No Connect or Connect to VDDIO or Connect to GND",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 28,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "RESV",
+        "notes": "By default, internal pull-up is enabled. Leave internal pull-up enabled if No Connect; disable via pads_pin7_pe_trim_d2a[0] = 0 if connected to VDDIO or GND.",
+        "numbers": [
+          "7"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "VDD: Power supply voltage",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 28,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDD",
+        "notes": "Operating range 1.71V to 3.6V. Bypass with 0.1 uF X7R capacitor to GND.",
+        "numbers": [
+          "8"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [
+          {
+            "af_code": null,
+            "name": "INT2",
+            "peripheral": "INT",
+            "role": "INT2"
+          },
+          {
+            "af_code": null,
+            "name": "FSYNC",
+            "peripheral": "FSYNC",
+            "role": "INPUT"
+          },
+          {
+            "af_code": null,
+            "name": "CLKIN",
+            "peripheral": "CLOCK",
+            "role": "CLKIN"
+          }
+        ],
+        "description": "INT2: Interrupt 2 (can be push-pull or open drain); FSYNC: Frame sync input; CLKIN: External clock input; If pin not used, can be No Connect or Connect to VDDIO",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 28,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "INT2 / FSYNC / CLKIN",
+        "notes": "By default, internal pull-up is enabled. Leave enabled if No Connect; disable via pads_int2_pe_trim_d2a[0] = 0 if connected as I/O. INT2 is available for AUX1 interrupt when AUX1 is enabled, and for host interrupt only if AUX1 is disabled.",
+        "numbers": [
+          "9"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [
+          {
+            "af_code": null,
+            "name": "AUX1_CS",
+            "peripheral": "AUX1_SPI",
+            "role": "CS"
+          }
+        ],
+        "description": "RESV: No Connect or Connect to VDDIO or Connect to GND (Single Interface / I2C Master Mode); AUX1_CS: AUX1 SPI chip select (Dual Interface OIS Mode)",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 29,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "RESV / AUX1_CS",
+        "notes": "By default, internal pull-up is enabled. Disable if AUX1 interface is active or if connected to VDDIO/GND; leave enabled if No Connect.",
+        "numbers": [
+          "10"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [
+          {
+            "af_code": null,
+            "name": "AUX1_SDO",
+            "peripheral": "AUX1_SPI",
+            "role": "SDO"
+          }
+        ],
+        "description": "RESV: No Connect or Connect to VDDIO or Connect to GND (Single Interface / I2C Master Mode); AUX1_SDO: AUX1 SPI serial data output (4-wire mode); No Connect if pin not used",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 29,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "RESV / AUX1_SDO",
+        "notes": "By default, internal pull-up is enabled. Disable if AUX1 interface is active or if connected to VDDIO/GND; leave enabled if No Connect.",
+        "numbers": [
+          "11"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "tri_state"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "AP_CS: AP SPI Chip select (AP SPI interface); Connect to VDDIO if using AP I3CSM / I2C interface",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 29,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "AP_CS",
+        "notes": "By default, internal pull-up is enabled. If AP interface is active, disable internal pull-up by setting pads_ap_cs_pe_trim_d2a[0] = 0.",
+        "numbers": [
+          "12"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [
+          {
+            "af_code": null,
+            "name": "AP_SCL",
+            "peripheral": "I2C",
+            "role": "SCL"
+          },
+          {
+            "af_code": null,
+            "name": "AP_SCL",
+            "peripheral": "I3C",
+            "role": "SCL"
+          },
+          {
+            "af_code": null,
+            "name": "AP_SCLK",
+            "peripheral": "SPI",
+            "role": "SCLK"
+          }
+        ],
+        "description": "AP_SCL: AP I3CSM / I2C serial clock; AP_SCLK: AP SPI serial clock",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 30,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "AP_SCL / AP_SCLK",
+        "notes": "By default, internal pull-up is enabled. If AP interface is active, disable internal pull-up by setting pads_ap_sclk_pe_trim_d2a[0] = 0.",
+        "numbers": [
+          "13"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [
+          {
+            "af_code": null,
+            "name": "AP_SDA",
+            "peripheral": "I2C",
+            "role": "SDA"
+          },
+          {
+            "af_code": null,
+            "name": "AP_SDA",
+            "peripheral": "I3C",
+            "role": "SDA"
+          },
+          {
+            "af_code": null,
+            "name": "AP_SDIO",
+            "peripheral": "SPI",
+            "role": "SDIO"
+          },
+          {
+            "af_code": null,
+            "name": "AP_SDI",
+            "peripheral": "SPI",
+            "role": "SDI"
+          }
+        ],
+        "description": "AP_SDA: AP I3CSM / I2C serial data; AP_SDIO: AP SPI serial data I/O (3-wire mode); AP_SDI: AP SPI serial data input (4-wire mode)",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 30,
+          "section": "4.1 Pin Out Diagram and Signal Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "AP_SDA / AP_SDIO / AP_SDI",
+        "notes": "By default, internal pull-up is enabled. If AP interface is active, disable internal pull-up by setting pads_ap_sdi_pe_trim_d2a[0] = 0.",
+        "numbers": [
+          "14"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      }
+    ],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 20,
+            "section": "3.3.1 D.C. Electrical Characteristics"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": "Performance parameters are not applicable beyond Specified Temperature Range",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 20,
+            "section": "3.3.1 D.C. Electrical Characteristics"
+          },
+          "max": 3.6,
+          "min": 1.71,
+          "notes": null,
+          "typ": 1.8,
+          "unit": "V"
+        }
+      ],
+      "VDDIO": [
+        {
+          "condition": "I2C / SPI interface",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 20,
+            "section": "3.3.1 D.C. Electrical Characteristics"
+          },
+          "max": 3.6,
+          "min": 1.08,
+          "notes": "Minimum VDDIO is 1.1 V when using I3CSM interface",
+          "typ": 1.8,
+          "unit": "V"
+        },
+        {
+          "condition": "I3CSM interface",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 20,
+            "section": "3.3.1 D.C. Electrical Characteristics"
+          },
+          "max": 3.6,
+          "min": 1.1,
+          "notes": "When using I3CSM interface the minimum VDDIO value is 1.1V",
+          "typ": 1.8,
+          "unit": "V"
+        }
+      ],
+      "V_supply_noise": [
+        {
+          "condition": "VDD = 1.8 V or 3.6 V, up to 1 MHz",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 21,
+            "section": "3.3.2 A.C. Electrical Characteristics"
+          },
+          "max": 0.05,
+          "min": null,
+          "notes": "peak-peak",
+          "typ": 0.01,
+          "unit": "V"
+        }
+      ],
+      "t_supply_ramp": [
+        {
+          "condition": "Valid power-on RESET monotonic ramp; ramp rate 10% to 90% of final value",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 21,
+            "section": "3.3.2 A.C. Electrical Characteristics"
+          },
+          "max": 0.001,
+          "min": 1e-05,
+          "notes": null,
+          "typ": null,
+          "unit": "s"
+        }
+      ]
+    }
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-11-20T17:12:15Z",
+    "extractor_schema_version": "1.4",
+    "extractor_scout": null,
+    "plan_ref": "ICM-45686.plan.json",
+    "quality_score": 62
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2023-11-25",
+    "datasheet_revision": "DS-000489 Rev 1.1",
+    "family_ref": null,
+    "local_path": "/var/home/bestsage/Documents/Larpotron/datasheets/ICM-45686_Accelerometer_Gyroscope_6_Axis_Sensor_I2C_I3C_SPI_Output.pdf",
+    "manufacturer": "TDK InvenSense",
+    "mpn": "ICM-45686",
+    "page_count": 199,
+    "sha256": "sha256:e6da695b4c17cfae538e82c6df72fbe5caa2821fa01dff9614090d57ca07f559",
+    "source_url": null
+  }
+}

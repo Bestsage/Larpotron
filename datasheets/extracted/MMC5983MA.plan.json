@@ -1,0 +1,50 @@
+{
+  "cache_dir": "/var/home/bestsage/Documents/Larpotron/datasheets/extracted",
+  "created_at": "2026-11-20T17:08:33Z",
+  "execution": {
+    "completed_at": "2026-11-20T17:12:15Z",
+    "outcomes": [],
+    "started_at": "2026-11-20T17:08:33Z"
+  },
+  "mpn": "MMC5983MA",
+  "pdf_path": "/var/home/bestsage/Documents/Larpotron/datasheets/MMC5983MA_-40\u2103~+105\u2103_18bit_2.8V~3.6V_450uA_I2C\u3001SPI_\u00b18Gs_\u00b18Gs_LGA-16(3x3)_3D_Magnetic.pdf",
+  "pdf_sha256": "sha256:8d0abc35d0d5b94a9a8e071f0b9daf7c45d6923bfe3b52373e24a252431f7090",
+  "plan_version": "1.0",
+  "scout_ref": "MMC5983MA.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        9,
+        19,
+        20
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "MMC5983MA.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        9,
+        11,
+        20
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "MMC5983MA.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

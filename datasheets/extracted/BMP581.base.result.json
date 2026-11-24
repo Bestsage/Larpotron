@@ -1,0 +1,195 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:12:56Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "Tstg": [
+        {
+          "condition": "\u2264 65 % r.h. (standard conditions: +25\u00b0C and 40% r.h.)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 13,
+            "section": "2 Specification - Table 6: Absolute maximum ratings"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": "Storage should occur at standard conditions; short-term storage outside standard conditions must stay within -40\u00b0C to +125\u00b0C.",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDDIO_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 13,
+            "section": "2 Specification - Table 6: Absolute maximum ratings"
+          },
+          "max": 4.3,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDD_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 13,
+            "section": "2 Specification - Table 6: Absolute maximum ratings"
+          },
+          "max": 4.3,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIO_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "medium",
+            "method": "calculated",
+            "page": 13,
+            "section": "2 Specification - Table 6: Absolute maximum ratings"
+          },
+          "max": 3.9,
+          "min": -0.3,
+          "notes": "VSSIO - 0.3 V to VDDIO + 0.3 V, resolved with VSSIO = 0 V and VDDIO = 3.6 V (max recommended operating voltage).",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 71,
+          "section": "8.5.1 RoHS"
+        },
+        "mark": "RoHS",
+        "rating": "Directive 2015/863 (amending Annex II to Directive 2011/65/EU)"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 71,
+          "section": "8.5.2 Halogen content"
+        },
+        "mark": "Halogen-Free",
+        "rating": null
+      }
+    ],
+    "description": "Absolute barometric pressure sensor (30 to 125 kPa) with SPI, I2C, and I3C digital interfaces",
+    "family": "absolute barometric pressure sensor",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 71,
+        "section": "8.4.1 MSL and device storage"
+      },
+      "msl": 1,
+      "peak_reflow_c": null
+    },
+    "package": {
+      "body_mm": {
+        "height": 0.75,
+        "length": 2,
+        "width": 2
+      },
+      "code": "LGA-10",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 10,
+        "section": "2 Specification - Table 3: Mechanical characteristics"
+      },
+      "pin_count": 10,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 10,
+            "section": "2 Specification - Table 4: Electrical characteristics"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": "Operational temperature range (TOP_full).",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 10,
+            "section": "2 Specification - Table 4: Electrical characteristics"
+          },
+          "max": 3.6,
+          "min": 1.71,
+          "notes": "Datasheet lists typical values 1.8 V / 3.3 V.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDDIO": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 10,
+            "section": "2 Specification - Table 4: Electrical characteristics"
+          },
+          "max": 3.6,
+          "min": 1.08,
+          "notes": "Datasheet lists typical values 1.2 V / 1.8 V / 3.3 V.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "t_VDDramp": [
+        {
+          "condition": "10% to 90% of target voltage (applies to t_VDDramp & t_VDDIOramp)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 10,
+            "section": "2 Specification - Table 4: Electrical characteristics"
+          },
+          "max": 0.01,
+          "min": 1e-05,
+          "notes": "For supply ramps < 0.01 ms (10 \u00b5s), a 10 \u03a9 resistor must be connected in series to the power supply.",
+          "typ": null,
+          "unit": "s"
+        }
+      ]
+    }
+  }
+}

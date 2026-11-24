@@ -1,0 +1,362 @@
+{
+  "base": {
+    "absolute_max": {
+      "IOSC": [
+        {
+          "condition": "No more than one output shorted to ground at a time; duration <= 1 s",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 0.1,
+          "min": null,
+          "notes": "Output Short Circuit Current (100 mA)",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "TA_abs": [
+        {
+          "condition": "Ambient Temperature with Power Applied",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 125,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "T_STG": [
+        {
+          "condition": "Storage Temperature Plastic Packages",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VCC": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 4,
+          "min": -0.5,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "Input voltage with respect to Ground (VSS)",
+          "evidence": {
+            "confidence": "high",
+            "method": "calculated",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 4.1,
+          "min": -0.5,
+          "notes": "Input voltage max is VCC + 0.5 V (resolved with VCC_max=3.6 V); overshoot up to VCC + 1.0 V and -1.0 V allowed for <= 20 ns per Section 11.4.3",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [],
+    "description": "256-Mb (32-MB) 3.0 V FL-L SPI/QPI NOR Flash memory, 133 MHz SDR / 66 MHz DDR, Industrial Plus (-40\u00b0C to +105\u00b0C)",
+    "esd": null,
+    "family": "SPI NOR Flash memory",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 0.75,
+        "length": 8,
+        "width": 6
+      },
+      "code": "WNG008",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 154,
+        "section": "14.4 WSON 8-Contact 6 x 8 mm Leadless (WNG008)"
+      },
+      "pin_count": 8,
+      "pitch_mm": 1.27,
+      "thermal_pad": true
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Chip Select.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 6,
+          "section": "2.2 8 Connector Packages"
+        },
+        "is_5v_tolerant": null,
+        "name": "CS#",
+        "notes": "Package: 8-contact WSON 6 x 8 mm (WNG008) for S25FL256LAGNFV010 (per Ordering Information, p. 148).",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial Output for single bit data commands. IO1 for Dual or Quad commands.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 6,
+          "section": "2.2 8 Connector Packages"
+        },
+        "is_5v_tolerant": null,
+        "name": "SO / IO1",
+        "notes": null,
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Write Protect when not in Quad mode (CR1V[1] = 0 and SR1NV[7] = 1). IO2 when in Quad mode (CR1V[1] = 1).",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 6,
+          "section": "2.2 8 Connector Packages"
+        },
+        "is_5v_tolerant": null,
+        "name": "WP# / IO2",
+        "notes": "Has internal pull-up resistor; may be left unconnected in the host system if not used for Quad commands or write protection.",
+        "numbers": [
+          "3"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Ground.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 6,
+          "section": "2.2 8 Connector Packages"
+        },
+        "is_5v_tolerant": null,
+        "name": "VSS",
+        "notes": null,
+        "numbers": [
+          "4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial Input for single bit data commands or IO0 for Dual or Quad commands.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 6,
+          "section": "2.2 8 Connector Packages"
+        },
+        "is_5v_tolerant": null,
+        "name": "SI / IO0",
+        "notes": null,
+        "numbers": [
+          "5"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial Clock.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 6,
+          "section": "2.2 8 Connector Packages"
+        },
+        "is_5v_tolerant": null,
+        "name": "SCK",
+        "notes": null,
+        "numbers": [
+          "6"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "IO3 in Quad-I/O mode (CR1V[1] = 1) or QPI mode (CR2V[3] = 1 and CS# is low). RESET# when enabled by CR2V[7] = 1 and not in Quad-I/O mode (CR1V[1] = 0), or when enabled in quad mode (CR1V[1] = 1 and CS# is high).",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 6,
+          "section": "2.2 8 Connector Packages"
+        },
+        "is_5v_tolerant": null,
+        "name": "IO3 / RESET#",
+        "notes": "Has internal pull-up resistor; may be left unconnected in the host system if not used for Quad commands or RESET#.",
+        "numbers": [
+          "7"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Power Supply.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 6,
+          "section": "2.2 8 Connector Packages"
+        },
+        "is_5v_tolerant": null,
+        "name": "VCC",
+        "notes": null,
+        "numbers": [
+          "8"
+        ],
+        "power_domain": "VCC",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      }
+    ],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": "Industrial Plus (V) grade",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 132,
+            "section": "11.4.2 Temperature Ranges"
+          },
+          "max": 105,
+          "min": -40,
+          "notes": "Variant-specific for S25FL256LAGNFV010",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VCC": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 132,
+            "section": "11.4.1 Power Supply Voltages"
+          },
+          "max": 3.6,
+          "min": 2.7,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "theta_ja": [
+        {
+          "condition": "WNG008 package",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 131,
+            "section": "11.3 Thermal Resistance"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 18,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-11-20T17:12:15Z",
+    "extractor_schema_version": "1.4",
+    "extractor_scout": null,
+    "plan_ref": "S25FL256LAGNFV010.plan.json",
+    "quality_score": 62
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2018-07-11",
+    "datasheet_revision": "002-00124 Rev. *H",
+    "family_ref": null,
+    "local_path": "/var/home/bestsage/Documents/Larpotron/datasheets/S25FL256LAGNFI010_-40\u2103~+85\u2103_100_000_cycles_133MHz_2.7V~3.6V_20_Years_20uA_256Mbit_Power-on.pdf",
+    "manufacturer": "Cypress Semiconductor",
+    "mpn": "S25FL256LAGNFV010",
+    "page_count": 161,
+    "sha256": "sha256:4c45d29b2df51d40ecdd405e06eb6a075acdc1eed9349ad6d4ac14c2c1eaac54",
+    "source_url": null
+  }
+}

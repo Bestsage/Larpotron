@@ -1,0 +1,38 @@
+{
+  "categories": [],
+  "extraction_pages": {
+    "base": [
+      1,
+      2,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      68,
+      69,
+      70,
+      71
+    ],
+    "pinout": [
+      46
+    ]
+  },
+  "metadata": {
+    "datasheet_date": "2025-04",
+    "datasheet_revision": "1.13",
+    "family_member_mpns": [
+      "BMP581"
+    ],
+    "is_family_pdf": false,
+    "manufacturer": "Bosch Sensortec",
+    "page_count": 75,
+    "source_url": null
+  },
+  "mpn": "BMP581",
+  "quality_verdict": {
+    "reason": null,
+    "verdict": "extractable"
+  }
+}

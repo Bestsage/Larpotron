@@ -1,0 +1,391 @@
+{
+  "base": {
+    "absolute_max": {
+      "Tstg": [
+        {
+          "condition": "\u2264 65 % r.h. (standard conditions: +25\u00b0C and 40% r.h.)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 13,
+            "section": "2 Specification - Table 6: Absolute maximum ratings"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": "Storage should occur at standard conditions; short-term storage outside standard conditions must stay within -40\u00b0C to +125\u00b0C.",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDDIO_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 13,
+            "section": "2 Specification - Table 6: Absolute maximum ratings"
+          },
+          "max": 4.3,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDD_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 13,
+            "section": "2 Specification - Table 6: Absolute maximum ratings"
+          },
+          "max": 4.3,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIO_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "medium",
+            "method": "calculated",
+            "page": 13,
+            "section": "2 Specification - Table 6: Absolute maximum ratings"
+          },
+          "max": 3.9,
+          "min": -0.3,
+          "notes": "VSSIO - 0.3 V to VDDIO + 0.3 V, resolved with VSSIO = 0 V and VDDIO = 3.6 V (max recommended operating voltage).",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 71,
+          "section": "8.5.1 RoHS"
+        },
+        "mark": "RoHS",
+        "rating": "Directive 2015/863 (amending Annex II to Directive 2011/65/EU)"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 71,
+          "section": "8.5.2 Halogen content"
+        },
+        "mark": "Halogen-Free",
+        "rating": null
+      }
+    ],
+    "description": "Absolute barometric pressure sensor (30 to 125 kPa) with SPI, I2C, and I3C digital interfaces",
+    "family": "absolute barometric pressure sensor",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 71,
+        "section": "8.4.1 MSL and device storage"
+      },
+      "msl": 1,
+      "peak_reflow_c": null
+    },
+    "package": {
+      "body_mm": {
+        "height": 0.75,
+        "length": 2,
+        "width": 2
+      },
+      "code": "LGA-10",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 10,
+        "section": "2 Specification - Table 3: Mechanical characteristics"
+      },
+      "pin_count": 10,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Digital interface supply",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 46,
+          "section": "6.1 Pin Out"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDDIO",
+        "notes": null,
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial clock input",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 46,
+          "section": "6.1 Pin Out"
+        },
+        "is_5v_tolerant": null,
+        "name": "SCK",
+        "notes": "Acts as SCL in I2C and I3C modes.",
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Ground",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 46,
+          "section": "6.1 Pin Out"
+        },
+        "is_5v_tolerant": null,
+        "name": "VSS",
+        "notes": "All VSS pins must be connected to GND.",
+        "numbers": [
+          "3",
+          "8",
+          "9"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial data input",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 46,
+          "section": "6.1 Pin Out"
+        },
+        "is_5v_tolerant": null,
+        "name": "SDI",
+        "notes": "MOSI in SPI 4-wire mode, bidirectional SDI/SDO in SPI 3-wire mode, and SDA in I2C/I3C modes. Must always be tied to low or high voltage and not left floating.",
+        "numbers": [
+          "4"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial data output",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 46,
+          "section": "6.1 Pin Out"
+        },
+        "is_5v_tolerant": null,
+        "name": "SDO",
+        "notes": "MISO in SPI 4-wire mode; must be left floating (DNC) in SPI 3-wire mode. In I2C/I3C mode, connect to VDDIO or VSSIO to select I2C slave address LSB (7'h46 if 0, 7'h47 if 1).",
+        "numbers": [
+          "5"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Chip select",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 46,
+          "section": "6.1 Pin Out"
+        },
+        "is_5v_tolerant": null,
+        "name": "CSB",
+        "notes": "Active-low chip select for SPI. Must be connected to VDDIO in I2C and I3C modes. Has an integrated pull-up resistor (74-131 kOhm) enabled via DRIVE_CONFIG.i2c_csb_pup_en.",
+        "numbers": [
+          "6"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "INT output",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 46,
+          "section": "6.1 Pin Out"
+        },
+        "is_5v_tolerant": null,
+        "name": "INT",
+        "notes": "Configurable push-pull or open-drain interrupt output. If unused, connect to GND with INT_CONFIG.int_en disabled, or leave unconnected with int_en=1, int_od=0, pad_int_drv=0.",
+        "numbers": [
+          "7"
+        ],
+        "power_domain": "VDDIO",
+        "recommended": null,
+        "subtype": null,
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Analog supply",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 46,
+          "section": "6.1 Pin Out"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDD",
+        "notes": null,
+        "numbers": [
+          "10"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      }
+    ],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 10,
+            "section": "2 Specification - Table 4: Electrical characteristics"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": "Operational temperature range (TOP_full).",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 10,
+            "section": "2 Specification - Table 4: Electrical characteristics"
+          },
+          "max": 3.6,
+          "min": 1.71,
+          "notes": "Datasheet lists typical values 1.8 V / 3.3 V.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDDIO": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 10,
+            "section": "2 Specification - Table 4: Electrical characteristics"
+          },
+          "max": 3.6,
+          "min": 1.08,
+          "notes": "Datasheet lists typical values 1.2 V / 1.8 V / 3.3 V.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "t_VDDramp": [
+        {
+          "condition": "10% to 90% of target voltage (applies to t_VDDramp & t_VDDIOramp)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 10,
+            "section": "2 Specification - Table 4: Electrical characteristics"
+          },
+          "max": 0.01,
+          "min": 1e-05,
+          "notes": "For supply ramps < 0.01 ms (10 \u00b5s), a 10 \u03a9 resistor must be connected in series to the power supply.",
+          "typ": null,
+          "unit": "s"
+        }
+      ]
+    }
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-11-20T17:12:56Z",
+    "extractor_schema_version": "1.4",
+    "extractor_scout": null,
+    "plan_ref": "BMP581.plan.json",
+    "quality_score": 59
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2025-04",
+    "datasheet_revision": "1.13",
+    "family_ref": null,
+    "local_path": "/var/home/bestsage/Documents/Larpotron/datasheets/BMP581_Pressure_Sensor_4.35PSI_~_18.13PSI_(30kPa_~_125kPa)_Absolute_10-WFLGA.pdf",
+    "manufacturer": "Bosch Sensortec",
+    "mpn": "BMP581",
+    "page_count": 75,
+    "sha256": "sha256:ddcf4202c4fdf2ab6ad86f22b67ba4d2471d76b9ce510397cacfe398400ab439",
+    "source_url": null
+  }
+}

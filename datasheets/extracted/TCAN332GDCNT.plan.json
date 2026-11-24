@@ -1,0 +1,46 @@
+{
+  "cache_dir": "/var/home/bestsage/Documents/Larpotron/datasheets/extracted",
+  "created_at": "2026-11-20T17:08:33Z",
+  "execution": {
+    "completed_at": "2026-11-20T17:12:48Z",
+    "outcomes": [],
+    "started_at": "2026-11-20T17:08:33Z"
+  },
+  "mpn": "TCAN332GDCNT",
+  "pdf_path": "/var/home/bestsage/Documents/Larpotron/datasheets/TCAN332GDCNT_High-Speed_CAN_Transceiver_with_CAN_FD_5Mbps_3.3V_supply_SOT-23-8_SOIC-8.pdf",
+  "pdf_sha256": "sha256:bb89f067e6a7902867bf6b82eaab762167f403ae8464a29ec4f318ab0c71628f",
+  "plan_version": "1.0",
+  "scout_ref": "TCAN332GDCNT.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        3,
+        5,
+        6,
+        34
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "TCAN332GDCNT.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        4
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "TCAN332GDCNT.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

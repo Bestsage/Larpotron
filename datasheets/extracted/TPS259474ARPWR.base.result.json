@@ -1,0 +1,553 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:13:04Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "SRIN_F": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 10000000,
+          "min": null,
+          "notes": "Published as 10 V/us on IN pin",
+          "typ": null,
+          "unit": "V/s"
+        }
+      ],
+      "SRIN_R": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 100000000,
+          "min": null,
+          "notes": "Published as 100 V/us on IN pin",
+          "typ": null,
+          "unit": "V/s"
+        }
+      ],
+      "TLEAD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 300,
+          "min": null,
+          "notes": "Maximum Lead Temperature",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "TSTG": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": "Storage temperature",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VEN_UVLO": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": -0.3,
+          "notes": "If pulled up to VIN, use >= 350 k\u03a9 resistor to limit current under reverse polarity conditions.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN_max": [
+        {
+          "condition": "-40\u00b0C <= TJ <= 125\u00b0C",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 28,
+          "min": -15,
+          "notes": "Published MIN is max(-15V, VOUT - 21V)",
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "-10\u00b0C <= TJ <= 125\u00b0C",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 28,
+          "min": -15,
+          "notes": "Published MIN is max(-15V, VOUT - 22V)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VOUT_PLS": [
+        {
+          "condition": "< 1 us pulse",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.8,
+          "notes": "Minimum Output Voltage Pulse (< 1 us) on OUT pin",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VOUT_max": [
+        {
+          "condition": "-40\u00b0C <= TJ <= 125\u00b0C",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 28,
+          "min": -0.3,
+          "notes": "Published MAX is min(28V, VIN + 21V)",
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "-10\u00b0C <= TJ <= 125\u00b0C",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 28,
+          "min": -0.3,
+          "notes": "Published MAX is min(28V, VIN + 22V)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VOVLO": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": -0.3,
+          "notes": "Applies to TPS259470x/4x (including TPS259474ARPWR). If pulled up to VIN, use >= 350 k\u03a9 resistor to limit current under reverse polarity conditions.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VPG": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": -0.3,
+          "notes": "Applies to TPS259472x/4x (including TPS259474ARPWR).",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VPGTH": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": -0.3,
+          "notes": "Applies to TPS259472x/4x (including TPS259474ARPWR). If pulled up to VIN, use >= 350 k\u03a9 resistor to limit current under reverse polarity conditions.",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "1 Features"
+        },
+        "mark": "UL 2367",
+        "rating": "File No. E339631 (RILM >= 750 \u03a9)"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "1 Features"
+        },
+        "mark": "IEC 62368-1",
+        "rating": "CB certified"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 68,
+          "section": "Package Option Addendum - Packaging Information"
+        },
+        "mark": "RoHS",
+        "rating": "Yes"
+      }
+    ],
+    "description": "2.7V to 23V, 5.5A, 28m\u03a9 True Reverse Current Blocking eFuse with Input Reverse Polarity Protection, Adjustable OVLO, Circuit Breaker, and Auto-Retry",
+    "esd": {
+      "CDM": [
+        {
+          "condition": "ANSI/ESDA/JEDEC JS-002",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Published as \u00b1500 V",
+          "typ": 500,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": "ANSI/ESDA/JEDEC JS-001",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.2 ESD Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Published as \u00b12000 V",
+          "typ": 2000,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "eFuse / hot-swap voltage controller with true reverse current blocking",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 68,
+        "section": "Package Option Addendum - Packaging Information"
+      },
+      "msl": 2,
+      "peak_reflow_c": 260
+    },
+    "package": {
+      "body_mm": {
+        "height": 1,
+        "length": 2,
+        "width": 2
+      },
+      "code": "VQFN-HR-10 (RPW)",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 72,
+        "section": "11 Mechanical, Packaging, and Orderable Information (RPW0010A)"
+      },
+      "pin_count": 10,
+      "pitch_mm": 0.45,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "IMAX": [
+        {
+          "condition": "TJ <= 125\u00b0C",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 5.5,
+          "min": null,
+          "notes": "Continuous Switch Current, IN to OUT",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "RILM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 6650,
+          "min": 549,
+          "notes": "ILM Pin Resistance",
+          "typ": null,
+          "unit": "\u03a9"
+        }
+      ],
+      "TJ": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": "Junction temperature",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VEN_UVLO": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 5,
+          "min": null,
+          "notes": "For VIN < 5V, OK to pull up directly to IN; for VIN > 5V or systems exposed to reverse polarity, use >= 350 k\u03a9 pull-up resistor.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 23,
+          "min": 2.7,
+          "notes": "Input Voltage Range",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VITIMER": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 4,
+          "min": null,
+          "notes": "ITIMER Pin Capacitor Voltage Rating",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VOUT": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 23,
+          "min": null,
+          "notes": "Published MAX is min(23V, VIN + 20V)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VOVLO": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 1.5,
+          "min": 0.5,
+          "notes": "Applies to TPS259470x/4x (including TPS259474ARPWR)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VPG": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 5,
+          "min": null,
+          "notes": "Applies to TPS259472x/4x (including TPS259474ARPWR). For reverse polarity systems, if referred to IN, use >= 350 k\u03a9 pull-up resistor.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VPGTH": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 5,
+          "min": null,
+          "notes": "Applies to TPS259472x/4x (including TPS259474ARPWR). For reverse polarity systems, if referred to IN, use >= 350 k\u03a9 pull-up resistor.",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "psi_jb": [
+        {
+          "condition": "Based on simulations conducted with the device mounted on a custom 4-layer PCB (2s2p) with 8 thermal vias under device.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 20,
+          "unit": "\u00b0C/W"
+        },
+        {
+          "condition": "Based on simulations conducted with the device mounted on a JEDEC 4-layer PCB (2s2p) with no thermal vias under device.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 27.6,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "psi_jt": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 1,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_ja": [
+        {
+          "condition": "Based on simulations conducted with the device mounted on a custom 4-layer PCB (2s2p) with 8 thermal vias under device.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 41.7,
+          "unit": "\u00b0C/W"
+        },
+        {
+          "condition": "Based on simulations conducted with the device mounted on a JEDEC 4-layer PCB (2s2p) with no thermal vias under device.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.4 Thermal Information"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 74.5,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  }
+}

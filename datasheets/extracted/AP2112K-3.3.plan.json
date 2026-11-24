@@ -1,0 +1,65 @@
+{
+  "cache_dir": "/var/home/bestsage/Documents/Larpotron/datasheets/extracted",
+  "created_at": "2026-11-20T17:08:33Z",
+  "execution": {
+    "completed_at": "2026-11-20T17:12:15Z",
+    "outcomes": [],
+    "started_at": "2026-11-20T17:08:33Z"
+  },
+  "mpn": "AP2112K-3.3",
+  "pdf_path": "/var/home/bestsage/Documents/Larpotron/datasheets/AP2112K-3.3_600mA_low_dropout_linear_regulator_with_enable_pin_3.8V-6V_input_voltage.pdf",
+  "pdf_sha256": "sha256:ef8d376f2ec356e29172eb9e053819a0ebdcc576dba7fc9ab0505c568427920f",
+  "plan_version": "1.0",
+  "scout_ref": "AP2112K-3.3.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        3,
+        8,
+        12,
+        14
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "AP2112K-3.3.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "AP2112K-3.3.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        8,
+        9,
+        10,
+        11
+      ],
+      "prompt_template": "skills/datasheets/prompts/regulator.md",
+      "result_ref": "AP2112K-3.3.regulator.result.json",
+      "schema": "skills/datasheets/schemas/regulator.schema.json",
+      "status": "complete",
+      "subagent_role": "regulator",
+      "task_id": "regulator",
+      "tier": "B"
+    }
+  ]
+}

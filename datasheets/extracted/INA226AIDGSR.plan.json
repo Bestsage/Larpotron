@@ -1,0 +1,47 @@
+{
+  "cache_dir": "/var/home/bestsage/Documents/Larpotron/datasheets/extracted",
+  "created_at": "2026-11-20T17:08:33Z",
+  "execution": {
+    "completed_at": "2026-11-20T17:12:15Z",
+    "outcomes": [],
+    "started_at": "2026-11-20T17:08:33Z"
+  },
+  "mpn": "INA226AIDGSR",
+  "pdf_path": "/var/home/bestsage/Documents/Larpotron/datasheets/INA226AIDGSR_High-Side_or_Low-Side_Measurement_Bi-Directional_Current_and_Power_Monitor.pdf",
+  "pdf_sha256": "sha256:c9b67f886d4a5241a5e070723f7b61867409eeb27eed768b9cdd9cb17e03ca2d",
+  "plan_version": "1.0",
+  "scout_ref": "INA226AIDGSR.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        34
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "INA226AIDGSR.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        3
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "INA226AIDGSR.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

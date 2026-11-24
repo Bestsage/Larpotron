@@ -1,0 +1,147 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:11Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "Tstg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 9,
+            "section": "ABSOLUTE MAXIMUM RATINGS*"
+          },
+          "max": 125,
+          "min": -55,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 9,
+            "section": "ABSOLUTE MAXIMUM RATINGS*"
+          },
+          "max": 3.6,
+          "min": -0.5,
+          "notes": "Listed as 'Supply Voltage -0.5 to +3.6V' in Absolute Maximum Ratings",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "FEATURES"
+        },
+        "mark": "RoHS",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "DESCRIPTION"
+        },
+        "mark": "AEC-Q100",
+        "rating": null
+      }
+    ],
+    "description": "\u00b18 Gauss, high performance 3-axis magnetic sensor with I2C/SPI interface",
+    "family": "3-axis magnetic sensor",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 19,
+        "section": "SOLDERING RECOMMENDATIONS"
+      },
+      "msl": 3,
+      "peak_reflow_c": 260
+    },
+    "package": {
+      "body_mm": {
+        "height": 1,
+        "length": 3,
+        "width": 3
+      },
+      "code": "LGA-16",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 20,
+        "section": "PACKAGE DRAWING (LGA package)"
+      },
+      "pin_count": 16,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "SPECIFICATIONS"
+          },
+          "max": 105,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "SPECIFICATIONS"
+          },
+          "max": 3.6,
+          "min": 2.8,
+          "notes": null,
+          "typ": 3,
+          "unit": "V"
+        }
+      ],
+      "VDDIO": [
+        {
+          "condition": "I2C interface and INT",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "SPECIFICATIONS"
+          },
+          "max": 3.6,
+          "min": 2.8,
+          "notes": null,
+          "typ": 3,
+          "unit": "V"
+        }
+      ]
+    }
+  }
+}

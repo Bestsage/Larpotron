@@ -1,0 +1,557 @@
+{
+  "schematic": "/var/home/bestsage/Documents/Larpotron/Larpotron.kicad_sch",
+  "last_sync": "2026-11-20T17:05:28.235671+00:00",
+  "parts": {
+    "CL10A106KP8NNNC": {
+      "file": "CL10A106KP8NNNC_10uF_\u00b110%_10V_Ceramic_Capacitor_X5R_0603.pdf",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "description": "10uF \u00b110% 10V Ceramic Capacitor X5R 0603",
+      "value": "10uF",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702",
+      "downloaded_date": "2026-11-20T17:04:30.354839+00:00",
+      "source": "lcsc",
+      "lcsc": "C19702",
+      "status": "ok",
+      "references": [
+        "C16"
+      ],
+      "size_bytes": 7856403,
+      "verification": "unverified"
+    },
+    "GRM155R61C105KA12D": {
+      "file": "CL05A105KA5NQNC_1uF_\u00b110%_25V_Ceramic_Capacitor_X5R_0402.pdf",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "description": "1uF \u00b110% 25V Ceramic Capacitor X5R 0402",
+      "value": "1uF",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C52923",
+      "downloaded_date": "2026-11-20T17:04:30.355473+00:00",
+      "source": "lcsc",
+      "lcsc": "C52923",
+      "status": "ok",
+      "references": [
+        "C2"
+      ],
+      "size_bytes": 7856403,
+      "verification": "unverified"
+    },
+    "CL10B105KA8NNNC": {
+      "file": "CL10B105KA8NNNC_1uF_\u00b110%_25V_Ceramic_Capacitor_X7R_0603.pdf",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "description": "1uF \u00b110% 25V Ceramic Capacitor X7R 0603",
+      "value": "1uF",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C29936",
+      "downloaded_date": "2026-11-20T17:04:30.355807+00:00",
+      "source": "lcsc",
+      "lcsc": "C29936",
+      "status": "ok",
+      "references": [
+        "C6"
+      ],
+      "size_bytes": 7856403,
+      "verification": "unverified"
+    },
+    "GRM155R71H104KE14D": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor 50V X7R",
+      "value": "100nF 50V",
+      "references": [
+        "C8"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'GRM155R71H104KE14D'",
+      "last_attempt": "2026-11-20T17:04:32.964473+00:00"
+    },
+    "CL31A226KAHNNNE": {
+      "file": "CGA1206X5R226M250NT_22uF_\u00b120%_25V_Ceramic_Capacitor_X5R_1206.pdf",
+      "manufacturer": "HRE",
+      "description": "22uF \u00b120% 25V Ceramic Capacitor X5R 1206",
+      "value": "22uF",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/979c3a6401c66560d148260fb5af2a68.pdf?productCode=C6119968",
+      "downloaded_date": "2026-11-20T17:04:32.829175+00:00",
+      "source": "lcsc",
+      "lcsc": "C6119968",
+      "status": "ok",
+      "references": [
+        "C7"
+      ],
+      "size_bytes": 503563,
+      "verification": "verified"
+    },
+    "GRM155R71C104KA88D": {
+      "file": "CL05B104KO5NNNC_100nF_\u00b110%_16V_Ceramic_Capacitor_X7R_0402.pdf",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "description": "100nF \u00b110% 16V Ceramic Capacitor X7R 0402",
+      "value": "100nF",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1525",
+      "downloaded_date": "2026-11-20T17:04:33.134135+00:00",
+      "source": "lcsc",
+      "lcsc": "C1525",
+      "status": "ok",
+      "references": [
+        "C9",
+        "C17",
+        "C1",
+        "C5",
+        "C15",
+        "C21",
+        "C12",
+        "C10",
+        "C20",
+        "C19",
+        "C14",
+        "C23",
+        "C13",
+        "C22",
+        "C18",
+        "C11"
+      ],
+      "size_bytes": 7856403,
+      "verification": "unverified"
+    },
+    "PRTR5V0U2X,215": {
+      "file": "PRTR5V0U2X_10VC_15VC_Clamp_6A_Ipp_ESD_DIODE_SOT-143.pdf",
+      "manufacturer": "TECH PUBLIC",
+      "description": "10VC 15VC Clamp 6A Ipp ESD DIODE SOT-143",
+      "value": "PRTR5V0U2X",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/9f29ccff9680f9b19926c993c11db63c.pdf?productCode=C2827688",
+      "downloaded_date": "2026-11-20T17:04:34.065085+00:00",
+      "source": "lcsc",
+      "lcsc": "C2827688",
+      "status": "ok",
+      "references": [
+        "D1"
+      ],
+      "size_bytes": 2099567,
+      "verification": "wrong",
+      "verification_details": "No MPN, manufacturer, or description keywords found in PDF (0/7 keywords)"
+    },
+    "150080YS75000": {
+      "file": "KT-0805Y_Yellow_596nm_LED_Indication_-_Discrete_1.8V~2.4V_0805.pdf",
+      "manufacturer": "Hubei KENTO Elec",
+      "description": "Yellow 596nm LED Indication - Discrete 1.8V~2.4V 0805",
+      "value": "Wurth Elektronik 150080YS75000",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/3f6a14f9ea2fc39f6e05d2ab0fa53e2b.pdf?productCode=C2296",
+      "downloaded_date": "2026-11-20T17:04:34.244935+00:00",
+      "source": "lcsc",
+      "lcsc": "C2296",
+      "status": "ok",
+      "references": [
+        "D2"
+      ],
+      "size_bytes": 630767,
+      "verification": "unverified"
+    },
+    "B5819WS-7-F": {
+      "file": "1N5819WS_S4_Diode_Independent_40V_350mA_Surface_Mount_SOD-323.pdf",
+      "manufacturer": "JSMSEMI",
+      "description": "Diode Independent 40V 350mA Surface Mount SOD-323",
+      "value": "1N5819WS",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e14966e7d6256fb2dd7f0a556c2ababb.pdf?productCode=C2927280",
+      "downloaded_date": "2026-11-20T17:04:34.747664+00:00",
+      "source": "lcsc",
+      "lcsc": "C2927280",
+      "status": "ok",
+      "references": [
+        "D3",
+        "D4"
+      ],
+      "size_bytes": 798583,
+      "verification": "likely"
+    },
+    "TPS259474ARPWR": {
+      "file": "TPS259474ARPWR_Hot_Swap_Voltage_Controllers_2.7-V_to_23-V_28-m_5.5-A_eFuse_with.pdf",
+      "manufacturer": "",
+      "description": "Hot Swap Voltage Controllers 2.7-V to 23-V, 28-m?, 5.5-A eFuse with integrated reverse polarity protection",
+      "value": "TPS259474ARPWR",
+      "datasheet_url": "https://www.ti.com/lit/gpn/tps25947?HQS=ti-null-null-sf-df-pf-sep-wwe&DCM=yes",
+      "downloaded_date": "2026-11-20T17:04:36.658286+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "IC4",
+        "IC3"
+      ],
+      "size_bytes": 5316794,
+      "verification": "likely"
+    },
+    "MMC5983MA": {
+      "file": "MMC5983MA_-40\u2103~+105\u2103_18bit_2.8V~3.6V_450uA_I2C\u3001SPI_\u00b18Gs_\u00b18Gs_LGA-16(3x3)_3D_Magnetic.pdf",
+      "manufacturer": "MEMSIC",
+      "description": "-40\u2103~+105\u2103 18bit 2.8V~3.6V 450uA I2C\u3001SPI \u00b18Gs \u00b18Gs LGA-16(3x3) 3D Magnetic Sensors ROHS",
+      "value": "MMC5983MA",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/9d7f14fedfaf858844ce7527cb98ee70.pdf?productCode=C404329",
+      "downloaded_date": "2026-11-20T17:04:35.534701+00:00",
+      "source": "lcsc",
+      "lcsc": "C404329",
+      "status": "ok",
+      "references": [
+        "IC1"
+      ],
+      "size_bytes": 684517,
+      "verification": "verified"
+    },
+    "S25FL256LAGNFV010": {
+      "file": "S25FL256LAGNFI010_-40\u2103~+85\u2103_100_000_cycles_133MHz_2.7V~3.6V_20_Years_20uA_256Mbit_Power-on.pdf",
+      "manufacturer": "Infineon/CYPRESS",
+      "description": "-40\u2103~+85\u2103 100,000 cycles 133MHz 2.7V~3.6V 20 Years 20uA 256Mbit Power-on reset\u3001Hardware write protection SPI WSON-8-EP(6x8) NOR FLASH ROHS",
+      "value": "S25FL256LAGNFV010",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/6f59947f71667ef42830fb71bc39d976.pdf?productCode=C1350629",
+      "downloaded_date": "2026-11-20T17:04:35.898881+00:00",
+      "source": "lcsc",
+      "lcsc": "C1350629",
+      "status": "ok",
+      "references": [
+        "IC2"
+      ],
+      "size_bytes": 2435159,
+      "verification": "unverified"
+    },
+    "XT30PW-M": {
+      "file": "XT30PW-M30.G.Y_Connector_XT30PW30-M.G._Male_Plug_Right_Angle_for_RC_ESC.pdf",
+      "manufacturer": "Changzhou Amass Elec",
+      "description": "Connector XT30PW30-M.G.* Male Plug Right Angle for RC ESC",
+      "value": "AMASS_XT30PW-M",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/f40c503d729038bd14858056d73ccb74.pdf?productCode=C431092",
+      "downloaded_date": "2026-11-20T17:04:36.802779+00:00",
+      "source": "lcsc",
+      "lcsc": "C431092",
+      "status": "ok",
+      "references": [
+        "J1"
+      ],
+      "size_bytes": 3877059,
+      "verification": "wrong",
+      "verification_details": "No MPN, manufacturer, or description keywords found in PDF (0/9 keywords)"
+    },
+    "BM05B-SRSS-TB(LF)(SN)": {
+      "file": "BM05B-SRSS-TB(LF)(SN)_Connector_Header_5_position_1mm_Pitch_1A_Surface_Mount_Vertical_-25\u2103~+85\u2103.pdf",
+      "manufacturer": "JST",
+      "description": "Connector Header 5 position 1mm Pitch 1A Surface Mount,Vertical -25\u2103~+85\u2103",
+      "value": "BM05B-SRSS-TB",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e03a82bcc66e3c3589917313e54d45e2.pdf?productCode=C160391",
+      "downloaded_date": "2026-11-20T17:04:37.252191+00:00",
+      "source": "lcsc",
+      "lcsc": "C160391",
+      "status": "ok",
+      "references": [
+        "J2"
+      ],
+      "size_bytes": 153968,
+      "verification": "unverified"
+    },
+    "BM02B-SRSS-TB(LF)(SN)": {
+      "file": "BM02B-SRSS-TB(LF)(SN)_Connector_Header_2_position_1mm_Pitch_1A_Surface_Mount_Vertical_-25\u2103~+85\u2103.pdf",
+      "manufacturer": "JST",
+      "description": "Connector Header 2 position 1mm Pitch 1A Surface Mount,Vertical -25\u2103~+85\u2103",
+      "value": "BM02B-SRSS-TB",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e03a82bcc66e3c3589917313e54d45e2.pdf?productCode=C160388",
+      "downloaded_date": "2026-11-20T17:04:37.610696+00:00",
+      "source": "lcsc",
+      "lcsc": "C160388",
+      "status": "ok",
+      "references": [
+        "J4",
+        "J3"
+      ],
+      "size_bytes": 153968,
+      "verification": "unverified"
+    },
+    "USB4105-GF-A": {
+      "file": "USB4105-GF-A_-40\u2103~+85\u2103_1_12P_48V_5A_Black_Female_Surface_Mount_Right_Angle_Type-C_USB.pdf",
+      "manufacturer": "Global Connector Technology",
+      "description": "-40\u2103~+85\u2103 1 12P 48V 5A Black Female Surface Mount, Right Angle Type-C USB 2.0 SMD USB Connectors ROHS",
+      "value": "USB_C_Receptacle_USB2.0_16P",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/76718c6dacc0a6125953c12b5ebc82df.pdf?productCode=C3020560",
+      "downloaded_date": "2026-11-20T17:04:38.144110+00:00",
+      "source": "lcsc",
+      "lcsc": "C3020560",
+      "status": "ok",
+      "references": [
+        "J6"
+      ],
+      "size_bytes": 143973,
+      "verification": "likely"
+    },
+    "SM04B-SRSS-TB(LF)(SN)": {
+      "file": "SM04B-SRSS-TB(LF)(SN)_Connector_Header_4_position_1mm_Pitch_1A_Surface_Mount_Right_Angle_-25\u2103~+85\u2103.pdf",
+      "manufacturer": "JST",
+      "description": "Connector Header 4 position 1mm Pitch 1A Surface Mount, Right Angle -25\u2103~+85\u2103",
+      "value": "SM04B-SRSS-TB",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/40c649e22fa9bda892cfec952005fd51.pdf?productCode=C160404",
+      "downloaded_date": "2026-11-20T17:04:38.415701+00:00",
+      "source": "lcsc",
+      "lcsc": "C160404",
+      "status": "ok",
+      "references": [
+        "J8",
+        "J5",
+        "J7"
+      ],
+      "size_bytes": 88825,
+      "verification": "unverified"
+    },
+    "SM06B-SRSS-TB(LF)(SN)": {
+      "file": "SM06B-SRSS-TB(LF)(SN)_Connector_Header_6_position_1mm_Pitch_1A_Surface_Mount_Right_Angle_-25\u2103~+85\u2103.pdf",
+      "manufacturer": "JST",
+      "description": "Connector Header 6 position 1mm Pitch 1A Surface Mount, Right Angle -25\u2103~+85\u2103",
+      "value": "Conn_01x06_MountingPin",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e03a82bcc66e3c3589917313e54d45e2.pdf?productCode=C160405",
+      "downloaded_date": "2026-11-20T17:04:39.205586+00:00",
+      "source": "lcsc",
+      "lcsc": "C160405",
+      "status": "ok",
+      "references": [
+        "J9"
+      ],
+      "size_bytes": 153968,
+      "verification": "unverified"
+    },
+    "WSL1206R0100FEA": {
+      "file": "HoLR1206-1W-10mR-1%-75ppm_10m\u03a9_1W_Current_Sense_Resistor_SMD_\u00b11%_\u00b175ppm_\u2103_1206_Current_Sense_Resistors.pdf",
+      "manufacturer": "Milliohm",
+      "description": "10m\u03a9 1W Current Sense Resistor SMD \u00b11% \u00b175ppm/\u2103 1206 Current Sense Resistors / Shunt Resistors ROHS",
+      "value": "10m",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/34f7e6f21b884b9942eb20423418cfca.pdf?productCode=C601097",
+      "downloaded_date": "2026-11-20T17:04:40.026016+00:00",
+      "source": "lcsc",
+      "lcsc": "C601097",
+      "status": "ok",
+      "references": [
+        "R1"
+      ],
+      "size_bytes": 919107,
+      "verification": "unverified"
+    },
+    "RC0603FR-0747KL": {
+      "file": "CRCW060347K0FKEA_-55\u2103~+155\u2103_100mW_47k\u03a9_75V_Thick_Film_Resistor_\u00b11%_\u00b1100ppm_\u2103_0603_Chip.pdf",
+      "manufacturer": "VISHAY",
+      "description": "-55\u2103~+155\u2103 100mW 47k\u03a9 75V Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+      "value": "47K",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/4e8fbfdb25755b8e8765922e87a9f02a.pdf?productCode=C844929",
+      "downloaded_date": "2026-11-20T17:04:40.899669+00:00",
+      "source": "lcsc",
+      "lcsc": "C844929",
+      "status": "ok",
+      "references": [
+        "R12",
+        "R16"
+      ],
+      "size_bytes": 130356,
+      "verification": "unverified"
+    },
+    "RC0603FR-0710KL": {
+      "file": "WR06X103JTL_-55\u2103~+155\u2103_100mW_10k\u03a9_75V_Thick_Film_Resistor_\u00b1100ppm_\u2103_\u00b15%_0603_Chip.pdf",
+      "manufacturer": "Walsin",
+      "description": "-55\u2103~+155\u2103 100mW 10k\u03a9 75V Thick Film Resistor \u00b1100ppm/\u2103 \u00b15% 0603 Chip Resistor - Surface Mount ROHS",
+      "value": "10K",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/b7fd8449de4a882cd112db0d86c915bb.pdf?productCode=C384294",
+      "downloaded_date": "2026-11-20T17:04:41.862068+00:00",
+      "source": "lcsc",
+      "lcsc": "C384294",
+      "status": "ok",
+      "references": [
+        "R2",
+        "R4",
+        "R3",
+        "R17",
+        "R13"
+      ],
+      "size_bytes": 243265,
+      "verification": "likely"
+    },
+    "RC0603FR-072K7L": {
+      "file": "0603WAF2701T5E_2.7k\u03a9_\u00b11%_100mW_0603_Thick_Film_Resistor.pdf",
+      "manufacturer": "UNI-ROYAL",
+      "description": "2.7k\u03a9 \u00b11% 100mW 0603 Thick Film Resistor",
+      "value": "2.7K",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C13167",
+      "downloaded_date": "2026-11-20T17:04:42.305998+00:00",
+      "source": "lcsc",
+      "lcsc": "C13167",
+      "status": "ok",
+      "references": [
+        "R20",
+        "R19"
+      ],
+      "size_bytes": 467557,
+      "verification": "likely"
+    },
+    "RC0603FR-07220RL": {
+      "file": "0603WAF2200T5E_220\u03a9_\u00b11%_100mW_0603_Thick_Film_Resistor.pdf",
+      "manufacturer": "UNI-ROYAL",
+      "description": "220\u03a9 \u00b11% 100mW 0603 Thick Film Resistor",
+      "value": "220R",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22962",
+      "downloaded_date": "2026-11-20T17:04:43.042343+00:00",
+      "source": "lcsc",
+      "lcsc": "C22962",
+      "status": "ok",
+      "references": [
+        "R21"
+      ],
+      "size_bytes": 467557,
+      "verification": "likely"
+    },
+    "RC0603FR-075K1L": {
+      "file": "0603WAF5101T5E_5.1k\u03a9_\u00b11%_100mW_0603_Thick_Film_Resistor.pdf",
+      "manufacturer": "UNI-ROYAL",
+      "description": "5.1k\u03a9 \u00b11% 100mW 0603 Thick Film Resistor",
+      "value": "5.1k",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23186",
+      "downloaded_date": "2026-11-20T17:04:43.235165+00:00",
+      "source": "lcsc",
+      "lcsc": "C23186",
+      "status": "ok",
+      "references": [
+        "R23",
+        "R24"
+      ],
+      "size_bytes": 467557,
+      "verification": "likely"
+    },
+    "RC0603FR-07100KL": {
+      "file": "0603WAF1003T5E_100k\u03a9_\u00b11%_100mW_0603_Thick_Film_Resistor.pdf",
+      "manufacturer": "UNI-ROYAL",
+      "description": "100k\u03a9 \u00b11% 100mW 0603 Thick Film Resistor",
+      "value": "100k",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803",
+      "downloaded_date": "2026-11-20T17:04:43.925382+00:00",
+      "source": "lcsc",
+      "lcsc": "C25803",
+      "status": "ok",
+      "references": [
+        "R26",
+        "R14",
+        "R15",
+        "R25"
+      ],
+      "size_bytes": 467557,
+      "verification": "likely"
+    },
+    "RC0402FR-0710KL": {
+      "file": "ARG02BTC1002_10k\u03a9_\u00b10.1%_62.5mW_0402_Thin_Film_Resistor.pdf",
+      "manufacturer": "Viking",
+      "description": "10k\u03a9 \u00b10.1% 62.5mW 0402 Thin Film Resistor",
+      "value": "10K",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/ec3e308e963624b453a77b63220f4bbf.pdf?productCode=C2902636",
+      "downloaded_date": "2026-11-20T17:04:44.407578+00:00",
+      "source": "lcsc",
+      "lcsc": "C2902636",
+      "status": "ok",
+      "references": [
+        "R5",
+        "R22",
+        "R7",
+        "R6"
+      ],
+      "size_bytes": 408862,
+      "verification": "likely"
+    },
+    "TPS62933": {
+      "file": "TPS62933_3.8-30V_3A_Synchronous_Buck_Converters_with_pulse_frequency_modulation.pdf",
+      "manufacturer": "",
+      "description": "3.8-30V, 3A Synchronous Buck Converters with pulse frequency modulation (PFM), SOT583-8",
+      "value": "TPS62933",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/tps62933.pdf",
+      "downloaded_date": "2026-11-20T17:04:44.694770+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "U1"
+      ],
+      "size_bytes": 4034940,
+      "verification": "verified"
+    },
+    "INA226AIDGSR": {
+      "file": "INA226AIDGSR_High-Side_or_Low-Side_Measurement_Bi-Directional_Current_and_Power_Monitor.pdf",
+      "manufacturer": "",
+      "description": "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)",
+      "value": "INA226",
+      "datasheet_url": "http://www.ti.com/lit/ds/symlink/ina226.pdf",
+      "downloaded_date": "2026-11-20T17:04:45.199870+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "U2"
+      ],
+      "size_bytes": 1516957,
+      "verification": "likely"
+    },
+    "ICM-45686": {
+      "file": "ICM-45686_Accelerometer_Gyroscope_6_Axis_Sensor_I2C_I3C_SPI_Output.pdf",
+      "manufacturer": "TDK InvenSense",
+      "description": "Accelerometer, Gyroscope, 6 Axis Sensor I2C, I3C, SPI Output",
+      "value": "ICM-45686",
+      "datasheet_url": "https://snapeda.s3.amazonaws.com/datasheet/DS-000489+ICM-45686+v1.1.pdf",
+      "downloaded_date": "2026-11-20T17:04:45.409881+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "U3"
+      ],
+      "size_bytes": 2557529,
+      "verification": "verified"
+    },
+    "BMP581": {
+      "file": "BMP581_Pressure_Sensor_4.35PSI_~_18.13PSI_(30kPa_~_125kPa)_Absolute_10-WFLGA.pdf",
+      "manufacturer": "",
+      "description": "Pressure Sensor 4.35PSI ~ 18.13PSI (30kPa ~ 125kPa) Absolute 10-WFLGA",
+      "value": "BMP581",
+      "datasheet_url": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp581-ds004.pdf",
+      "downloaded_date": "2026-11-20T17:04:45.604836+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "U4"
+      ],
+      "size_bytes": 2816457,
+      "verification": "verified"
+    },
+    "AP2112K-3.3": {
+      "file": "AP2112K-3.3_600mA_low_dropout_linear_regulator_with_enable_pin_3.8V-6V_input_voltage.pdf",
+      "manufacturer": "",
+      "description": "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5",
+      "value": "AP2112K-3.3",
+      "datasheet_url": "https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+      "downloaded_date": "2026-11-20T17:04:46.978102+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "U7"
+      ],
+      "size_bytes": 755270,
+      "verification": "likely"
+    },
+    "STM32G491CCU6": {
+      "file": "STM32G491CCU6_-40\u2103~+85\u2103_1.71V~3.6V_112KB_12bit_12bit_170MHz_256KB_32_Bit_42_ARM_Cortex-M4F.pdf",
+      "manufacturer": "ST",
+      "description": "-40\u2103~+85\u2103 1.71V~3.6V 112KB 12bit 12bit 170MHz 256KB 32 Bit 42 ARM Cortex-M4F Built-in FLASH UFQFPN-48(7x7) Microcontrollers (MCU/MPU/SOC) ROHS",
+      "value": "STM32G491CCUx",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0d06a641b7199a94d0056bdf80774a72.pdf?productCode=C2970035",
+      "downloaded_date": "2026-11-20T17:04:46.446319+00:00",
+      "source": "lcsc",
+      "lcsc": "C2970035",
+      "status": "ok",
+      "references": [
+        "U6"
+      ],
+      "size_bytes": 2676834,
+      "verification": "unverified"
+    },
+    "TCAN332GDCNT": {
+      "file": "TCAN332GDCNT_High-Speed_CAN_Transceiver_with_CAN_FD_5Mbps_3.3V_supply_SOT-23-8_SOIC-8.pdf",
+      "manufacturer": "",
+      "description": "High-Speed CAN Transceiver with CAN FD, 5Mbps, 3.3V supply, SOT-23-8/SOIC-8",
+      "value": "TCAN332G",
+      "datasheet_url": "http://www.ti.com/lit/ds/symlink/tcan337.pdf",
+      "downloaded_date": "2026-11-20T17:04:45.994002+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "U5"
+      ],
+      "size_bytes": 1718520,
+      "verification": "likely"
+    }
+  }
+}

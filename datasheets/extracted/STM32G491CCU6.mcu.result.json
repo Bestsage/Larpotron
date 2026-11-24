@@ -1,0 +1,205 @@
+{
+  "task_id": "mcu",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:34Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "adc": {
+      "bit_depth": 12,
+      "channel_count": 19,
+      "sample_rate_max_hz": 4000000
+    },
+    "boot_pins": [
+      {
+        "function": "BOOT0",
+        "pin_number": "46"
+      }
+    ],
+    "core_family": "cortex_m4f",
+    "core_speed_max": 170000000,
+    "dac": {
+      "bit_depth": 12,
+      "channel_count": 4,
+      "sample_rate_max_hz": 15000000
+    },
+    "debug_interface": "swd_jtag",
+    "eeprom_size": 0,
+    "flash_size": 262144,
+    "gpio_count": 42,
+    "nvic_priorities": 16,
+    "package": {
+      "body_mm": {
+        "height": 0.55,
+        "length": 7,
+        "width": 7
+      },
+      "code": "UFQFPN48",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 169,
+        "section": "6.2 UFQFPN48 package information"
+      },
+      "pin_count": 48,
+      "pitch_mm": 0.5,
+      "thermal_pad": true
+    },
+    "peripheral_counts": {
+      "can": 2,
+      "dac": 2,
+      "ethernet": 0,
+      "i2c": 3,
+      "spi": 3,
+      "timer_advanced": 3,
+      "timer_general": 8,
+      "uart": 5,
+      "usb": 1
+    },
+    "pin_count": 48,
+    "ram_size": 114688,
+    "reset_pin": "7",
+    "temperature_grades": [
+      "industrial: -40 to +85"
+    ],
+    "thermal_resistance": {
+      "rtheta_ja": [
+        {
+          "condition": "UFQFPN48 - 7 x 7 mm",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 193,
+            "section": "6.10 Thermal characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 27.4,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "rtheta_jc": [
+        {
+          "condition": "UFQFPN48 - 7 x 7 mm, case is bottom thermal pad",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 194,
+            "section": "6.10 Thermal characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 1.5,
+          "unit": "\u00b0C/W"
+        },
+        {
+          "condition": "UFQFPN48 - 7 x 7 mm",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 194,
+            "section": "6.10 Thermal characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 8.6,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "rtheta_jl": null
+    },
+    "vdd_range": [
+      {
+        "condition": "Standard operating voltage",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 73,
+          "section": "5.3.1 General operating conditions"
+        },
+        "max": 3.6,
+        "min": 1.71,
+        "notes": "When RESET is released functionality is guaranteed down to VBOR0 Min.",
+        "typ": null,
+        "unit": "V"
+      }
+    ],
+    "vdda_range": [
+      {
+        "condition": "ADC or COMP used",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 73,
+          "section": "5.3.1 General operating conditions"
+        },
+        "max": 3.6,
+        "min": 1.62,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      },
+      {
+        "condition": "DAC 1 MSPS or DAC 15 MSPS",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 73,
+          "section": "5.3.1 General operating conditions"
+        },
+        "max": 3.6,
+        "min": 1.71,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      },
+      {
+        "condition": "OPAMP used",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 73,
+          "section": "5.3.1 General operating conditions"
+        },
+        "max": 3.6,
+        "min": 2,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      },
+      {
+        "condition": "VREFBUF used",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 73,
+          "section": "5.3.1 General operating conditions"
+        },
+        "max": 3.6,
+        "min": 2.4,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      },
+      {
+        "condition": "ADC, DAC, OPAMP, COMP, VREFBUF not used",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 73,
+          "section": "5.3.1 General operating conditions"
+        },
+        "max": 3.6,
+        "min": 0,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      }
+    ],
+    "vddio_range": null
+  }
+}

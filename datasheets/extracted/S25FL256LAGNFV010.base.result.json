@@ -1,0 +1,168 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:10:30Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "IOSC": [
+        {
+          "condition": "No more than one output shorted to ground at a time; duration <= 1 s",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 0.1,
+          "min": null,
+          "notes": "Output Short Circuit Current (100 mA)",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "TA_abs": [
+        {
+          "condition": "Ambient Temperature with Power Applied",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 125,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "T_STG": [
+        {
+          "condition": "Storage Temperature Plastic Packages",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VCC": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 4,
+          "min": -0.5,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "Input voltage with respect to Ground (VSS)",
+          "evidence": {
+            "confidence": "high",
+            "method": "calculated",
+            "page": 131,
+            "section": "11.1 Absolute Maximum Ratings"
+          },
+          "max": 4.1,
+          "min": -0.5,
+          "notes": "Input voltage max is VCC + 0.5 V (resolved with VCC_max=3.6 V); overshoot up to VCC + 1.0 V and -1.0 V allowed for <= 20 ns per Section 11.4.3",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [],
+    "description": "256-Mb (32-MB) 3.0 V FL-L SPI/QPI NOR Flash memory, 133 MHz SDR / 66 MHz DDR, Industrial Plus (-40\u00b0C to +105\u00b0C)",
+    "esd": null,
+    "family": "SPI NOR Flash memory",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 0.75,
+        "length": 8,
+        "width": 6
+      },
+      "code": "WNG008",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 154,
+        "section": "14.4 WSON 8-Contact 6 x 8 mm Leadless (WNG008)"
+      },
+      "pin_count": 8,
+      "pitch_mm": 1.27,
+      "thermal_pad": true
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": "Industrial Plus (V) grade",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 132,
+            "section": "11.4.2 Temperature Ranges"
+          },
+          "max": 105,
+          "min": -40,
+          "notes": "Variant-specific for S25FL256LAGNFV010",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VCC": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 132,
+            "section": "11.4.1 Power Supply Voltages"
+          },
+          "max": 3.6,
+          "min": 2.7,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "theta_ja": [
+        {
+          "condition": "WNG008 package",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 131,
+            "section": "11.3 Thermal Resistance"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 18,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  }
+}

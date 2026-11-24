@@ -1,0 +1,40 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:07:44Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "categories": [],
+    "extraction_pages": {
+      "base": [
+        1,
+        2,
+        3,
+        4,
+        9,
+        19,
+        20
+      ],
+      "pinout": [
+        9,
+        11,
+        20
+      ]
+    },
+    "metadata": {
+      "datasheet_date": "2019-02-25",
+      "datasheet_revision": "Rev. A",
+      "is_family_pdf": false,
+      "manufacturer": "MEMSIC",
+      "page_count": 20,
+      "source_url": null
+    },
+    "mpn": "MMC5983MA",
+    "quality_verdict": {
+      "reason": null,
+      "verdict": "extractable"
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "task_id": "regulator",
+  "schema_version": "0.3",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:10Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "cin_min": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "medium",
+          "method": "prose",
+          "page": 32,
+          "section": "10.2.2.9 Input Capacitor Selection"
+        },
+        "max": null,
+        "min": 1e-05,
+        "notes": "Typical recommended input decoupling capacitor is 10 \u00b5F (X5R/X7R ceramic), plus an additional 0.1 \u00b5F (1e-7 F) ceramic capacitor from VIN to GND for high-frequency filtering.",
+        "typ": 1e-05,
+        "unit": "F"
+      }
+    ],
+    "compensation_pin": null,
+    "cout_min": [
+      {
+        "condition": "VOUT = 3.3 V, fSW = 500 kHz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 32,
+          "section": "10.2.2.8 Output Capacitor Selection"
+        },
+        "max": null,
+        "min": 1.5e-05,
+        "notes": "Effective capacitance (accounting for DC bias derating) from Table 10-2",
+        "typ": 4e-05,
+        "unit": "F"
+      },
+      {
+        "condition": "VOUT = 3.3 V, fSW = 1200 kHz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 32,
+          "section": "10.2.2.8 Output Capacitor Selection"
+        },
+        "max": null,
+        "min": 1e-05,
+        "notes": "Effective capacitance (accounting for DC bias derating) from Table 10-2",
+        "typ": 3e-05,
+        "unit": "F"
+      },
+      {
+        "condition": "VOUT = 5 V, fSW = 500 kHz or 1200 kHz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 32,
+          "section": "10.2.2.8 Output Capacitor Selection"
+        },
+        "max": null,
+        "min": 1e-05,
+        "notes": "Effective capacitance (accounting for DC bias derating) from Table 10-2",
+        "typ": 2e-05,
+        "unit": "F"
+      },
+      {
+        "condition": "VOUT = 12 V, fSW = 500 kHz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 32,
+          "section": "10.2.2.8 Output Capacitor Selection"
+        },
+        "max": null,
+        "min": 1e-05,
+        "notes": "Effective capacitance (accounting for DC bias derating) from Table 10-2",
+        "typ": 1.5e-05,
+        "unit": "F"
+      }
+    ],
+    "dropout": null,
+    "enable_pin": "2",
+    "feedback_pin": "8",
+    "inductor_range": [
+      {
+        "condition": "VOUT = 3.3 V to 12 V, fSW = 500 kHz to 1200 kHz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 32,
+          "section": "10.2.2.8 Output Capacitor Selection"
+        },
+        "max": 1.2e-05,
+        "min": 2.2e-06,
+        "notes": "Recommended typical inductors from Table 10-2: 2.2 \u00b5H (3.3 V, 1200 kHz), 3.3 \u00b5H (5 V, 1200 kHz), 4.7 \u00b5H (3.3 V, 500 kHz), 6.8 \u00b5H (5 V, 500 kHz), 12 \u00b5H (12 V, 500 kHz)",
+        "typ": null,
+        "unit": "H"
+      }
+    ],
+    "iout_max": [
+      {
+        "condition": "TJ = -40\u00b0C to 150\u00b0C",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 5,
+          "section": "8.3 Recommended Operating Conditions"
+        },
+        "max": 3,
+        "min": null,
+        "notes": "Continuous output current rating for TPS62933",
+        "typ": null,
+        "unit": "A"
+      }
+    ],
+    "line_regulation": null,
+    "load_regulation": null,
+    "power_good_pin": null,
+    "psrr": null,
+    "reference_voltage": [
+      {
+        "condition": "TJ = 25\u00b0C",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 6,
+          "section": "8.5 Electrical Characteristics"
+        },
+        "max": 0.808,
+        "min": 0.792,
+        "notes": null,
+        "typ": 0.8,
+        "unit": "V"
+      },
+      {
+        "condition": "TJ = 0\u00b0C to 85\u00b0C",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 6,
+          "section": "8.5 Electrical Characteristics"
+        },
+        "max": 0.812,
+        "min": 0.788,
+        "notes": null,
+        "typ": 0.8,
+        "unit": "V"
+      },
+      {
+        "condition": "TJ = -40\u00b0C to 150\u00b0C",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 6,
+          "section": "8.5 Electrical Characteristics"
+        },
+        "max": 0.816,
+        "min": 0.784,
+        "notes": null,
+        "typ": 0.8,
+        "unit": "V"
+      }
+    ],
+    "sequencing": null,
+    "stability_conditions": {
+      "cap_types_allowed": [
+        "ceramic_x5r",
+        "ceramic_x7r",
+        "electrolytic"
+      ],
+      "esr_range": null,
+      "evidence": {
+        "confidence": "medium",
+        "method": "prose",
+        "page": 32,
+        "section": "10.2.2.8 Output Capacitor Selection"
+      },
+      "notes": "Internally compensated peak current mode control provides stable operation with almost any combination of output capacitors. Ceramic capacitors (X5R/X7R) or ceramic plus aluminum electrolytic in parallel are recommended; large COUT values require checking start-up and loop stability."
+    },
+    "switching_freq": [
+      {
+        "condition": "RT = floating",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "8.5 Electrical Characteristics"
+        },
+        "max": 550000,
+        "min": 450000,
+        "notes": null,
+        "typ": 500000,
+        "unit": "Hz"
+      },
+      {
+        "condition": "RT = GND",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "8.5 Electrical Characteristics"
+        },
+        "max": 1350000,
+        "min": 1000000,
+        "notes": null,
+        "typ": 1200000,
+        "unit": "Hz"
+      },
+      {
+        "condition": "RT = 8.9 k\u03a9 to 111 k\u03a9 to GND",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 20,
+          "section": "9.3.5 Switching Frequency Selection"
+        },
+        "max": 2200000,
+        "min": 200000,
+        "notes": "Adjustable switching frequency range via RT resistor (Table 9-1)",
+        "typ": null,
+        "unit": "Hz"
+      }
+    ],
+    "topology": "buck",
+    "vin_range": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 5,
+          "section": "8.3 Recommended Operating Conditions"
+        },
+        "max": 30,
+        "min": 3.8,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      }
+    ],
+    "vout_range": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 5,
+          "section": "8.3 Recommended Operating Conditions"
+        },
+        "max": 22,
+        "min": 0.8,
+        "notes": "Adjustable via external FB resistor divider",
+        "typ": null,
+        "unit": "V"
+      }
+    ]
+  }
+}

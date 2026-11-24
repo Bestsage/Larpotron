@@ -1,0 +1,188 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:15Z",
+  "model_tier": "A",
+  "model_id": "antigravity-inherit",
+  "data": [
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Digital interface supply",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 46,
+        "section": "6.1 Pin Out"
+      },
+      "is_5v_tolerant": null,
+      "name": "VDDIO",
+      "notes": null,
+      "numbers": [
+        "1"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Serial clock input",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 46,
+        "section": "6.1 Pin Out"
+      },
+      "is_5v_tolerant": null,
+      "name": "SCK",
+      "notes": "Acts as SCL in I2C and I3C modes.",
+      "numbers": [
+        "2"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Ground",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 46,
+        "section": "6.1 Pin Out"
+      },
+      "is_5v_tolerant": null,
+      "name": "VSS",
+      "notes": "All VSS pins must be connected to GND.",
+      "numbers": [
+        "3",
+        "8",
+        "9"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Serial data input",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 46,
+        "section": "6.1 Pin Out"
+      },
+      "is_5v_tolerant": null,
+      "name": "SDI",
+      "notes": "MOSI in SPI 4-wire mode, bidirectional SDI/SDO in SPI 3-wire mode, and SDA in I2C/I3C modes. Must always be tied to low or high voltage and not left floating.",
+      "numbers": [
+        "4"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "bidirectional"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Serial data output",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 46,
+        "section": "6.1 Pin Out"
+      },
+      "is_5v_tolerant": null,
+      "name": "SDO",
+      "notes": "MISO in SPI 4-wire mode; must be left floating (DNC) in SPI 3-wire mode. In I2C/I3C mode, connect to VDDIO or VSSIO to select I2C slave address LSB (7'h46 if 0, 7'h47 if 1).",
+      "numbers": [
+        "5"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "bidirectional"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Chip select",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 46,
+        "section": "6.1 Pin Out"
+      },
+      "is_5v_tolerant": null,
+      "name": "CSB",
+      "notes": "Active-low chip select for SPI. Must be connected to VDDIO in I2C and I3C modes. Has an integrated pull-up resistor (74-131 kOhm) enabled via DRIVE_CONFIG.i2c_csb_pup_en.",
+      "numbers": [
+        "6"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "INT output",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 46,
+        "section": "6.1 Pin Out"
+      },
+      "is_5v_tolerant": null,
+      "name": "INT",
+      "notes": "Configurable push-pull or open-drain interrupt output. If unused, connect to GND with INT_CONFIG.int_en disabled, or leave unconnected with int_en=1, int_od=0, pad_int_drv=0.",
+      "numbers": [
+        "7"
+      ],
+      "power_domain": "VDDIO",
+      "recommended": null,
+      "subtype": null,
+      "type": "output"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Analog supply",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 46,
+        "section": "6.1 Pin Out"
+      },
+      "is_5v_tolerant": null,
+      "name": "VDD",
+      "notes": null,
+      "numbers": [
+        "10"
+      ],
+      "power_domain": "VDD",
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    }
+  ]
+}

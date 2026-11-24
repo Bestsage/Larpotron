@@ -1,0 +1,319 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:12:48Z",
+  "model_tier": "A",
+  "model_id": "antigravity-inherit",
+  "data": [
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 5,
+          "min": -0.3,
+          "notes": "Logic input terminal voltage range V(Logic_Input)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "CAN transmit data input (LOW for dominant and HIGH for recessive bus states), integrated pull up",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "TXD",
+      "notes": "TCAN332GDCNT uses the 8-pin SOT-23 (DCN) package (identical pinout to 8-pin SOIC D).",
+      "numbers": [
+        "1"
+      ],
+      "power_domain": "VCC",
+      "recommended": null,
+      "subtype": null,
+      "type": "input"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "Ground connection",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "GND",
+      "notes": null,
+      "numbers": [
+        "2"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 5,
+          "min": -0.3,
+          "notes": "Supply Voltage range, VCC",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "3.3-V supply voltage",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "VCC",
+      "notes": null,
+      "numbers": [
+        "3"
+      ],
+      "power_domain": "VCC",
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": 3.6,
+          "min": 3,
+          "notes": "Supply voltage, VCC",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 5,
+          "min": -0.3,
+          "notes": "Logic output terminal voltage range, V(Logic_Output)",
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 0.008,
+          "min": null,
+          "notes": "Logic output current, IO(LOGIC)",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "alt_functions": [],
+      "description": "CAN receive data output (LOW for dominant and HIGH for recessive bus states), tri-state",
+      "drive_strength": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": null,
+          "min": -0.002,
+          "notes": "IOH(LOGIC) Logic terminal HIGH level output current",
+          "typ": null,
+          "unit": "A"
+        },
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.3 Recommended Operating Conditions"
+          },
+          "max": 0.002,
+          "min": null,
+          "notes": "IOL(LOGIC) Logic terminal LOW level output current",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "RXD",
+      "notes": null,
+      "numbers": [
+        "4"
+      ],
+      "power_domain": "VCC",
+      "recommended": null,
+      "subtype": null,
+      "type": "tri_state"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "No Connect \u2013 Not internally connected",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "NC",
+      "notes": null,
+      "numbers": [
+        "5"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "not_connected"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 14,
+          "min": -14,
+          "notes": "Voltage at any bus terminal (CANH or CANL), V(BUS)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Low level CAN bus line",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "CANL",
+      "notes": null,
+      "numbers": [
+        "6"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "bidirectional"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "5.1 Absolute Maximum Ratings"
+          },
+          "max": 14,
+          "min": -14,
+          "notes": "Voltage at any bus terminal (CANH or CANL), V(BUS)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "High level CAN bus line",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "CANH",
+      "notes": null,
+      "numbers": [
+        "7"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "bidirectional"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "No Connect \u2013 Not internally connected",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "4 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "NC",
+      "notes": null,
+      "numbers": [
+        "8"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": null,
+      "type": "not_connected"
+    }
+  ]
+}

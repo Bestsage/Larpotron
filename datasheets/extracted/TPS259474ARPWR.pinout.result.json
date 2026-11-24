@@ -1,0 +1,440 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:09:30Z",
+  "model_tier": "A",
+  "model_id": "antigravity-inherit",
+  "data": [
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": -0.3,
+          "notes": "If pulled up to VIN, use >=350 kOhm resistor to limit current under reverse polarity",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Active High Enable for the device. A Resistor Divider on this pin from input supply to GND can be used to adjust the Undervoltage Lockout threshold. Do not leave floating. Refer to Section 7.3.2 for details.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 5,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "EN/UVLO",
+      "notes": "RPW (10-pin VQFN-HR, 2mm x 2mm) package selected for TPS259474ARPWR. Do not leave floating.",
+      "numbers": [
+        "1"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 5,
+          "min": null,
+          "notes": "For supply >5V or reverse polarity, use >=350 kOhm pull-up resistor",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": "analog",
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": -0.3,
+          "notes": "If pulled up to VIN, use >=350 kOhm resistor to limit current under reverse polarity",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "TPS259470x, TPS259474x: A Resistor Divider on this pin from supply to GND can be used to adjust the Overvoltage Lockout threshold. This pin can also be used as an Active Low Enable for the device. Do not leave floating. Refer to Section 7.3.3 for details.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 5,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "OVLO",
+      "notes": "On TPS259472x variants this pin is OVCSEL; on TPS259474ARPWR it is OVLO. Do not leave floating.",
+      "numbers": [
+        "2"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 1.5,
+          "min": 0.5,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": "analog",
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "TPS259472x, TPS259474x: Power Good indication. This pin is an Open Drain signal which is asserted High when the internal powerpath is fully turned ON and PGTH input exceeds a certain threshold. Refer to Section 7.3.11 for more details.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 5,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "PG",
+      "notes": "On TPS259470x variants this pin is AUXOFF; on TPS259474ARPWR it is PG.",
+      "numbers": [
+        "3"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 5,
+          "min": null,
+          "notes": "If referred to input supply in reverse polarity systems, use >=350 kOhm pull-up resistor",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": "open_drain",
+      "type": "open_collector"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": -0.3,
+          "notes": "If pulled up to VIN, use >=350 kOhm resistor to limit current under reverse polarity",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "TPS259472x, TPS259474x: Power Good Threshold. Refer to Section 7.3.11 for more details.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 5,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "PGTH",
+      "notes": "On TPS259470x variants this pin is FLT; on TPS259474ARPWR it is PGTH.",
+      "numbers": [
+        "4"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 5,
+          "min": null,
+          "notes": "If referred to input supply in reverse polarity systems, use >=350 kOhm pull-up resistor",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": "analog",
+      "type": "input"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": "-40\u00b0C <= TJ <= 125\u00b0C",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 28,
+          "min": -15,
+          "notes": "MIN is max(-15, VOUT - 21) for -40\u00b0C <= TJ <= 125\u00b0C, or max(-15, VOUT - 22) for -10\u00b0C <= TJ <= 125\u00b0C",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Power input",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 5,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "IN",
+      "notes": null,
+      "numbers": [
+        "5"
+      ],
+      "power_domain": "VIN",
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 23,
+          "min": 2.7,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": null,
+      "type": "power_in"
+    },
+    {
+      "absolute_max": [
+        {
+          "condition": "-40\u00b0C <= TJ <= 125\u00b0C",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "6.1 Absolute Maximum Ratings"
+          },
+          "max": 28,
+          "min": -0.3,
+          "notes": "MAX is min(28, VIN + 21) for -40\u00b0C <= TJ <= 125\u00b0C, or min(28, VIN + 22) for -10\u00b0C <= TJ <= 125\u00b0C; minimum pulse (<1us) is -0.8V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "alt_functions": [],
+      "description": "Power output",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 5,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "OUT",
+      "notes": null,
+      "numbers": [
+        "6"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 23,
+          "min": null,
+          "notes": "MAX is min(23, VIN + 20) V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": null,
+      "type": "power_out"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "A capacitor from this pin to GND sets the output turn on slew rate. Leave this pin floating for the fastest turn on slew rate. Refer to Section 7.3.5.1 for details.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 5,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "DVDT",
+      "notes": "Leave floating for fastest turn-on slew rate. Recommended capacitor voltage rating: VIN + 5V.",
+      "numbers": [
+        "7"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": "analog",
+      "type": "output"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "This pin is the ground reference for all internal circuits and must be connected to system GND.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 5,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "GND",
+      "notes": null,
+      "numbers": [
+        "8"
+      ],
+      "power_domain": null,
+      "recommended": null,
+      "subtype": "ground",
+      "type": "power_in"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "This pin is a dual function pin used to limit and monitor the output current. An external resistor from this pin to GND sets the output current limit threshold during start-up as well as steady state. The pin voltage can also be used as analog output load current monitor signal. Do not leave floating. Refer to Section 7.3.5.2 or Section 7.3.5.3 for more details.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 6,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "ILM",
+      "notes": "Do not leave floating. Keep parasitic capacitance on ILM pin below 50pF for stable operation.",
+      "numbers": [
+        "9"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": 6650,
+          "min": 549,
+          "notes": "Recommended RILM resistance from ILM pin to GND",
+          "typ": null,
+          "unit": "\u03a9"
+        }
+      ],
+      "subtype": "analog",
+      "type": "output"
+    },
+    {
+      "absolute_max": null,
+      "alt_functions": [],
+      "description": "A capacitor from this pin to GND sets the overcurrent blanking interval during which the output current can temporarily exceed set current limit (but lower than fast-trip threshold) before the device overcurrent response takes action. Leave this pin open for fastest response to overcurrent events. Refer to Section 7.3.5.2 or Section 7.3.5.3 for more details.",
+      "drive_strength": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 6,
+        "section": "5 Pin Configuration and Functions"
+      },
+      "is_5v_tolerant": null,
+      "name": "ITIMER",
+      "notes": "Leave open for fastest response to overcurrent events.",
+      "numbers": [
+        "10"
+      ],
+      "power_domain": null,
+      "recommended": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "6.3 Recommended Operating Conditions"
+          },
+          "max": null,
+          "min": 4,
+          "notes": "ITIMER Pin Capacitor Voltage Rating",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "subtype": "analog",
+      "type": "output"
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-11-20T17:10:09Z",
+  "model_tier": "B",
+  "model_id": "antigravity-inherit",
+  "data": {
+    "absolute_max": {
+      "IINJ_PIN": [
+        {
+          "condition": "Injected current on FT_xxx, TT_xx, NRST pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0,
+          "min": -0.005,
+          "notes": "Published as -5/0 mA; positive injection not possible",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "IIO_PIN_max": [
+        {
+          "condition": "Output current sunk or sourced by any I/O and control pin",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.02,
+          "min": null,
+          "notes": "Published as 20 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "IVDD_PIN_max": [
+        {
+          "condition": "Maximum current into each VDD power pin (source)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.1,
+          "min": null,
+          "notes": "Published as 100 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "IVSS_PIN_max": [
+        {
+          "condition": "Maximum current out of each VSS ground pin (sink)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.1,
+          "min": null,
+          "notes": "Published as 100 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "TJ_max": [
+        {
+          "condition": "Maximum junction temperature",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 150,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "Tstg": [
+        {
+          "condition": "Storage temperature range",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD_max": [
+        {
+          "condition": "External main supply voltage (VDD, VDDA, VBAT, VREF+) referenced to VSS",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 71,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 4,
+          "min": -0.3,
+          "notes": "Family-wide rating",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN_FT_c": [
+        {
+          "condition": "Input voltage on FT_c pins, referenced to VSS",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 71,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 5.5,
+          "min": -0.3,
+          "notes": "Published min is VSS - 0.3 V; family-wide rating",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN_TT_xx": [
+        {
+          "condition": "Input voltage on TT_xx pins, referenced to VSS",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 71,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 4,
+          "min": -0.3,
+          "notes": "Published min is VSS - 0.3 V; family-wide rating",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN_other": [
+        {
+          "condition": "Input voltage on any other pins, referenced to VSS",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 71,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 4,
+          "min": -0.3,
+          "notes": "Published min is VSS - 0.3 V; FT_xxx (except FT_c) max is min(VDD, VDDA) + 4.0 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VREF_plus_VDDA_diff": [
+        {
+          "condition": "Allowed voltage difference for VREF+ > VDDA",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 71,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.4,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "delta_VDDx": [
+        {
+          "condition": "Variations between different VDDx power pins of the same domain",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 71,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.05,
+          "min": null,
+          "notes": "Published as 50 mV",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "delta_VSSx": [
+        {
+          "condition": "Variations between all different ground pins (including VREF-)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 71,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.05,
+          "min": null,
+          "notes": "Published as 50 mV",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "sum_IINJ_PIN": [
+        {
+          "condition": "Total injected current (sum of all I/Os and control pins)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.025,
+          "min": -0.025,
+          "notes": "Published as \u00b125 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "sum_IIO_PIN_max": [
+        {
+          "condition": "Total output current sunk or sourced by sum of all I/Os and control pins",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.1,
+          "min": null,
+          "notes": "Published as 100 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "sum_IVDD_max": [
+        {
+          "condition": "Total current into sum of all VDD power lines (source)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.15,
+          "min": null,
+          "notes": "Published as 150 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "sum_IVSS_max": [
+        {
+          "condition": "Total current out of sum of all VSS ground lines (sink)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 72,
+            "section": "5.2 Absolute maximum ratings"
+          },
+          "max": 0.15,
+          "min": null,
+          "notes": "Published as 150 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 165,
+          "section": "6 Package information"
+        },
+        "mark": "ECOPACK",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 71,
+          "section": "5.2 Absolute maximum ratings"
+        },
+        "mark": "JEDEC JESD47",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 161,
+          "section": "USB characteristics"
+        },
+        "mark": "USB-IF",
+        "rating": "USB 2.0 Full-speed"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 164,
+          "section": "5.3.28 UCPD characteristics"
+        },
+        "mark": "USB Type-C",
+        "rating": "Rev. 1.2"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 164,
+          "section": "5.3.28 UCPD characteristics"
+        },
+        "mark": "USB Power Delivery",
+        "rating": "Rev. 3.0"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 112,
+          "section": "5.3.12 Electrical sensitivity characteristics"
+        },
+        "mark": "EIA/JESD 78E",
+        "rating": "Class II level A"
+      }
+    ],
+    "description": "Arm Cortex-M4 32-bit MCU+FPU, 170 MHz, 256 KB Flash, 112 KB SRAM, rich analog, math accelerator",
+    "esd": {
+      "CDM": [
+        {
+          "condition": "TA = +25 \u00b0C, conforming to ANSI/ESDA/JEDEC JS-002, Class C2a (Other packages)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 111,
+            "section": "5.3.12 Electrical sensitivity characteristics"
+          },
+          "max": 500,
+          "min": null,
+          "notes": "Variant-specific for UFQFPN48 (Other packages; LQFP80 14x14 and LQFP100 are 250 V Class C1)",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": "TA = +25 \u00b0C, conforming to ANSI/ESDA/JEDEC JS-001, Class 2",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 111,
+            "section": "5.3.12 Electrical sensitivity characteristics"
+          },
+          "max": 2000,
+          "min": null,
+          "notes": "Family-wide rating",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "ARM Cortex-M4 MCU",
+    "package": {
+      "body_mm": {
+        "height": 0.55,
+        "length": 7,
+        "width": 7
+      },
+      "code": "UFQFPN48",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 169,
+        "section": "6.2 UFQFPN48 package information"
+      },
+      "pin_count": 48,
+      "pitch_mm": 0.5,
+      "thermal_pad": true
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": "Suffix 6 version, maximum power dissipation",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": "Variant-specific for STM32G491CCU6 (temperature range suffix 6)",
+          "typ": null,
+          "unit": "\u00b0C"
+        },
+        {
+          "condition": "Suffix 6 version, low-power dissipation",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 105,
+          "min": -40,
+          "notes": "Variant-specific for STM32G491CCU6; TA can be extended to 105 \u00b0C in low-power dissipation state as long as TJ does not exceed TJmax",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "TJ": [
+        {
+          "condition": "Suffix 6 version",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 105,
+          "min": -40,
+          "notes": "Variant-specific for STM32G491CCU6 (temperature range suffix 6)",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VBAT": [
+        {
+          "condition": "Backup operating voltage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 3.6,
+          "min": 1.55,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": "Standard operating voltage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 3.6,
+          "min": 1.71,
+          "notes": "When RESET is released functionality is guaranteed down to VBOR0 Min",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDDA": [
+        {
+          "condition": "ADC or COMP used",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 3.6,
+          "min": 1.62,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "DAC 1 MSPS or DAC 15 MSPS",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 3.6,
+          "min": 1.71,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "OPAMP used",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 3.6,
+          "min": 2,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "VREFBUF used",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 3.6,
+          "min": 2.4,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "ADC, DAC, OPAMP, COMP, VREFBUF not used",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 3.6,
+          "min": 0,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "TT_xx I/O",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": null,
+          "min": -0.3,
+          "notes": "Published max: VDD + 0.3 V",
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "FT_c I/O",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 5,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "All I/O except TT_xx and FT_c",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 5.5,
+          "min": -0.3,
+          "notes": "Published max: MIN(MIN(VDD, VDDA) + 3.6 V, 5.5 V); internal pull-up/pull-down resistors must be disabled above Min(VDD, VDDA) + 0.3 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "fHCLK": [
+        {
+          "condition": "Internal AHB clock frequency",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 170000000,
+          "min": 0,
+          "notes": "Published as 0 to 170 MHz",
+          "typ": null,
+          "unit": "Hz"
+        }
+      ],
+      "fPCLK1": [
+        {
+          "condition": "Internal APB1 clock frequency",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 170000000,
+          "min": 0,
+          "notes": "Published as 0 to 170 MHz",
+          "typ": null,
+          "unit": "Hz"
+        }
+      ],
+      "fPCLK2": [
+        {
+          "condition": "Internal APB2 clock frequency",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 73,
+            "section": "5.3.1 General operating conditions"
+          },
+          "max": 170000000,
+          "min": 0,
+          "notes": "Published as 0 to 170 MHz",
+          "typ": null,
+          "unit": "Hz"
+        }
+      ]
+    },
+    "thermal": {
+      "theta_ja": [
+        {
+          "condition": "UFQFPN48 - 7 x 7 mm, JESD51-2 natural convection (still air)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 193,
+            "section": "6.10 Thermal characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Variant-specific for UFQFPN48 package (STM32G491CCU6)",
+          "typ": 27.4,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jb": [
+        {
+          "condition": "UFQFPN48 - 7 x 7 mm",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 194,
+            "section": "6.10 Thermal characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Variant-specific for UFQFPN48 package (STM32G491CCU6)",
+          "typ": 11.4,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jc": [
+        {
+          "condition": "UFQFPN48 - 7 x 7 mm, case is bottom thermal pad",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 194,
+            "section": "6.10 Thermal characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Variant-specific for UFQFPN48 package (STM32G491CCU6)",
+          "typ": 1.5,
+          "unit": "\u00b0C/W"
+        },
+        {
+          "condition": "UFQFPN48 - 7 x 7 mm, junction-to-case (top)",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 194,
+            "section": "6.10 Thermal characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Variant-specific for UFQFPN48 package (STM32G491CCU6)",
+          "typ": 8.6,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  }
+}

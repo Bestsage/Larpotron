@@ -1,0 +1,560 @@
+{
+  "base": {
+    "absolute_max": {
+      "TJ_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "Tlead_max": [
+        {
+          "condition": "Soldering, 10 Seconds",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 260,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "Tstg": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 6.5,
+          "min": null,
+          "notes": "Published as VCC (Power Supply Voltage)",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "mark": "RoHS",
+        "rating": "2002/95/EC & 2011/65/EU (RoHS 2), Totally Lead-Free"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "mark": "Green",
+        "rating": "Halogen and Antimony Free"
+      }
+    ],
+    "description": "600mA CMOS LDO regulator with enable, 3.3V fixed output",
+    "esd": {
+      "HBM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 4000,
+          "unit": "V"
+        }
+      ],
+      "MM": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 400,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "CMOS low dropout linear regulator",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 1.1,
+        "length": 2.8,
+        "width": 1.6
+      },
+      "code": "SOT25",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 14,
+        "section": "Package Outline Dimensions"
+      },
+      "pin_count": 5,
+      "pitch_mm": 0.95,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Input Voltage",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Pin Descriptions"
+        },
+        "is_5v_tolerant": null,
+        "name": "VIN",
+        "notes": "SOT25 package selected for AP2112K-3.3 (per Ordering Information, page 12).",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "GND",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Pin Descriptions"
+        },
+        "is_5v_tolerant": null,
+        "name": "GND",
+        "notes": null,
+        "numbers": [
+          "2"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Chip Enable, H \u2013 normal work, L \u2013 shutdown output",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Pin Descriptions"
+        },
+        "is_5v_tolerant": null,
+        "name": "EN",
+        "notes": "Internal 3.0 M\u03a9 pull-down resistor to GND (page 2 Functional Block Diagram, page 8 RPD).",
+        "numbers": [
+          "3"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": null,
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "No Connection",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "curve",
+          "page": 1,
+          "section": "Pin Assignments"
+        },
+        "is_5v_tolerant": null,
+        "name": "NC",
+        "notes": "Labeled NC on SOT25 Pin Assignments diagram (page 1); listed as '\u2014' in Pin Descriptions table (page 2).",
+        "numbers": [
+          "4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "not_connected"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Output Voltage",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Pin Descriptions"
+        },
+        "is_5v_tolerant": null,
+        "name": "VOUT",
+        "notes": "3.3V fixed output, 600mA minimum continuous load current; includes 60\u03a9 auto-discharge to GND when disabled.",
+        "numbers": [
+          "5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "power_out"
+      }
+    ],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Recommended Operating Conditions"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Recommended Operating Conditions"
+          },
+          "max": 6,
+          "min": 2.5,
+          "notes": "Family-wide recommended VIN range; for 3.3V output variant, regulation requires VIN >= VOUT + VDROP (tested at 4.3V to 6.0V on page 8)",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "theta_ja": [
+        {
+          "condition": "SOT25, No Heatsink",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 184,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "theta_jc": [
+        {
+          "condition": "SOT25",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 8,
+            "section": "AP2112-3.3 Electrical Characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 96,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  },
+  "categories": [
+    "regulator"
+  ],
+  "extraction": {
+    "extracted_at": "2026-11-20T17:12:15Z",
+    "extractor_schema_version": "1.4",
+    "extractor_scout": null,
+    "plan_ref": "AP2112K-3.3.plan.json",
+    "quality_score": 94
+  },
+  "regulator": {
+    "cin_min": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 2,
+          "section": "Typical Applications Circuit"
+        },
+        "max": null,
+        "min": 1e-06,
+        "notes": "1.0\u00b5F recommended; X7R or X5R dielectric recommended if ceramic capacitor is selected",
+        "typ": null,
+        "unit": "F"
+      }
+    ],
+    "cout_min": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "max": null,
+        "min": 1e-06,
+        "notes": "Stable with 1.0\u00b5F Ceramic (X7R or X5R recommended), Tantalum, or Aluminum Electrolytic capacitor",
+        "typ": null,
+        "unit": "F"
+      }
+    ],
+    "dropout": [
+      {
+        "condition": "IOUT = 10mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 0.008,
+        "min": null,
+        "notes": null,
+        "typ": 0.005,
+        "unit": "V"
+      },
+      {
+        "condition": "IOUT = 300mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 0.2,
+        "min": null,
+        "notes": null,
+        "typ": 0.125,
+        "unit": "V"
+      },
+      {
+        "condition": "IOUT = 600mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 0.4,
+        "min": null,
+        "notes": null,
+        "typ": 0.25,
+        "unit": "V"
+      }
+    ],
+    "enable_pin": "3",
+    "iout_max": [
+      {
+        "condition": "VIN = 4.3V, VOUT = 3.251V to 3.350V",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": null,
+        "min": 0.6,
+        "notes": "Guaranteed minimum continuous output current (600mA min)",
+        "typ": null,
+        "unit": "A"
+      }
+    ],
+    "line_regulation": [
+      {
+        "condition": "4.3V <= VIN <= 6V, IOUT = 30mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 0.1,
+        "min": -0.1,
+        "notes": "Datasheet unit is %/V (-0.1 min, 0.02 typ, 0.1 max %/V)",
+        "typ": 0.02,
+        "unit": "%"
+      }
+    ],
+    "load_regulation": [
+      {
+        "condition": "VIN = 4.3V, 1mA <= IOUT <= 600mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 1,
+        "min": -1,
+        "notes": "Datasheet unit is %/A (-1 min, 0.2 typ, 1 max %/A)",
+        "typ": 0.2,
+        "unit": "%"
+      }
+    ],
+    "psrr": [
+      {
+        "condition": "Ripple 0.5Vp-p, VIN = 4.3V, IOUT = 100mA, f = 100Hz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": null,
+        "min": null,
+        "notes": null,
+        "typ": 65,
+        "unit": "dB"
+      },
+      {
+        "condition": "Ripple 0.5Vp-p, VIN = 4.3V, IOUT = 100mA, f = 1kHz",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": null,
+        "min": null,
+        "notes": null,
+        "typ": 65,
+        "unit": "dB"
+      }
+    ],
+    "stability_conditions": {
+      "cap_types_allowed": [
+        "ceramic_x5r",
+        "ceramic_x7r",
+        "tantalum",
+        "electrolytic"
+      ],
+      "esr_range": null,
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 2,
+        "section": "Typical Applications Circuit (Note 4)"
+      },
+      "notes": "Stable with 1.0\u00b5F Ceramic (X7R or X5R recommended), Tantalum, and Aluminum Electrolytic capacitors"
+    },
+    "topology": "ldo",
+    "vin_range": [
+      {
+        "condition": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 3,
+          "section": "Recommended Operating Conditions"
+        },
+        "max": 6,
+        "min": 2.5,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      }
+    ],
+    "vout_range": [
+      {
+        "condition": "VIN = 4.3V, 1mA <= IOUT <= 30mA",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "AP2112-3.3 Electrical Characteristics"
+        },
+        "max": 3.3495,
+        "min": 3.2505,
+        "notes": "VOUT * 98.5% to VOUT * 101.5% (\u00b11.5% accuracy)",
+        "typ": 3.3,
+        "unit": "V"
+      }
+    ]
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {
+      "regulator": "0.3"
+    }
+  },
+  "source": {
+    "datasheet_date": "2017-06",
+    "datasheet_revision": "DS39724 Rev. 2 - 2",
+    "family_ref": null,
+    "local_path": "/var/home/bestsage/Documents/Larpotron/datasheets/AP2112K-3.3_600mA_low_dropout_linear_regulator_with_enable_pin_3.8V-6V_input_voltage.pdf",
+    "manufacturer": "Diodes Incorporated",
+    "mpn": "AP2112K-3.3",
+    "page_count": 18,
+    "sha256": "sha256:ef8d376f2ec356e29172eb9e053819a0ebdcc576dba7fc9ab0505c568427920f",
+    "source_url": "www.diodes.com"
+  }
+}
