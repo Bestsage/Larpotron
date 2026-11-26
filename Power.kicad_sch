@@ -3072,6 +3072,12 @@
 		(uuid "22df07fb-9625-4cdf-998d-01773ee08e64")
 	)
 	(junction
+		(at 25.4 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a7f8b16-0470-4a5c-80ea-541788a946d8")
+	)
+	(junction
 		(at 262.89 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3112,6 +3118,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "637dc0e7-4b75-44f9-8ac9-6af4d02ff109")
+	)
+	(junction
+		(at 25.4 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "665c8145-9458-40d6-b10e-07829f269c8d")
 	)
 	(junction
 		(at 151.13 67.31)
@@ -3471,7 +3483,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 73.66) (xy 20.32 74.93)
+			(xy 13.97 76.2) (xy 13.97 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3528,6 +3540,16 @@
 			(type default)
 		)
 		(uuid "1a175240-5455-4529-b6c5-6349d78094a2")
+	)
+	(wire
+		(pts
+			(xy 25.4 74.93) (xy 29.21 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e5335e3-2cdc-4716-8bb6-1ee93014a78e")
 	)
 	(wire
 		(pts
@@ -3701,7 +3723,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 151.13) (xy 254 143.51)
+			(xy 256.54 151.13) (xy 256.54 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3911,7 +3933,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 151.13) (xy 261.62 151.13)
+			(xy 256.54 151.13) (xy 261.62 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4101,6 +4123,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 82.55) (xy 29.21 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6f2b6d4-5c4e-49fa-bf0b-c695df27e831")
+	)
+	(wire
+		(pts
 			(xy 43.18 95.25) (xy 43.18 97.79)
 		)
 		(stroke
@@ -4118,16 +4150,6 @@
 			(type default)
 		)
 		(uuid "b7e8c34b-8499-4898-9618-479f3a250f9f")
-	)
-	(wire
-		(pts
-			(xy 254 143.51) (xy 256.54 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b96e1a75-d3e1-4040-adff-325277faf3f3")
 	)
 	(wire
 		(pts
@@ -4151,7 +4173,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 74.93) (xy 29.21 74.93)
+			(xy 13.97 74.93) (xy 25.4 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4411,7 +4433,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 82.55) (xy 29.21 82.55)
+			(xy 20.32 82.55) (xy 25.4 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4733,7 +4755,7 @@
 	)
 	(global_label "PYRO2_H"
 		(shape input)
-		(at 256.54 146.05 180)
+		(at 256.54 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4741,9 +4763,9 @@
 			)
 			(justify right)
 		)
-		(uuid "a4e5a20a-0968-471d-a84a-c828d0b7b320")
+		(uuid "a10802f1-6cc1-4823-a6ca-ebcf2e993b2f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.0881 146.05 0)
+			(at 245.0881 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7772,7 +7794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 244.602 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -9013,7 +9035,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 59.182 168.91 90)
 			(hide yes)
 			(show_name no)
@@ -9360,7 +9382,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 149.86 169.418 90)
 			(hide yes)
 			(show_name no)
@@ -9853,7 +9875,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 267.462 99.06 90)
 			(hide yes)
 			(show_name no)
@@ -10458,7 +10480,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 175.768 81.28 90)
 			(hide yes)
 			(show_name no)
@@ -10882,7 +10904,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 267.462 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -11491,7 +11513,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 24.13 82.55 0)
+		(at 20.32 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11502,7 +11524,7 @@
 		(fields_autoplaced yes)
 		(uuid "90a7fd49-8e64-4b92-8fa2-b64baab6ae91")
 		(property "Reference" "#PWR079"
-			(at 24.13 86.36 0)
+			(at 20.32 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11513,7 +11535,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 24.13 77.47 0)
+			(at 20.32 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11523,7 +11545,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 24.13 82.55 0)
+			(at 20.32 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11534,7 +11556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.13 82.55 0)
+			(at 20.32 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11545,7 +11567,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 24.13 82.55 0)
+			(at 20.32 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11601,7 +11623,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 174.752 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -12879,7 +12901,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 244.602 99.06 90)
 			(hide yes)
 			(show_name no)
@@ -13352,7 +13374,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 20.32 73.66 180)
+		(at 13.97 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13360,10 +13382,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ceb53033-30c9-476d-ab25-75ccf0a13551")
 		(property "Reference" "#PWR095"
-			(at 20.32 67.31 0)
+			(at 13.97 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13374,17 +13395,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 20.32 68.58 0)
+			(at 12.446 81.026 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 20.32 73.66 0)
+			(at 13.97 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13395,7 +13417,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 20.32 73.66 0)
+			(at 13.97 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13406,7 +13428,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 20.32 73.66 0)
+			(at 13.97 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13423,6 +13445,141 @@
 			(project "Larpotron"
 				(path "/74b1f722-69d3-4dce-994a-5fba2ac1def4/6cdeef23-5277-4b89-a048-8300d3845810"
 					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 25.4 78.74 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cf687152-3054-4a3c-b373-e27c750d5ab8")
+		(property "Reference" "C34"
+			(at 25.146 70.104 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF 50V"
+			(at 25.146 68.072 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 24.4348 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor 50V X7R"
+			(at 25.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" ""
+			(at 92.71 -68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 92.71 -68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 92.71 -68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM155R71H104KE14D"
+			(at 92.71 -68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 92.71 -68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53b370c8-dc05-48c1-8df5-55f541d1b30d")
+		)
+		(pin "2"
+			(uuid "1edfcecd-b55f-4ba3-a6de-4a0736da13fc")
+		)
+		(instances
+			(project "Larpotron"
+				(path "/74b1f722-69d3-4dce-994a-5fba2ac1def4/6cdeef23-5277-4b89-a048-8300d3845810"
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -14758,7 +14915,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 59.182 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -15048,7 +15205,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 149.86 140.208 90)
 			(hide yes)
 			(show_name no)

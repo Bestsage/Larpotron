@@ -5612,16 +5612,16 @@
 		(uuid "ff10e574-c4df-4821-b270-3c4c004d6fb7")
 	)
 	(no_connect
+		(at 111.76 81.28)
+		(uuid "31eafc97-de87-43a9-b97b-674aafc52fcf")
+	)
+	(no_connect
+		(at 111.76 104.14)
+		(uuid "397eb34f-46b1-468f-ad3e-cca855918352")
+	)
+	(no_connect
 		(at 45.72 125.73)
 		(uuid "46f3a0fc-1c01-4bb8-91d5-3f1672c6c8ea")
-	)
-	(no_connect
-		(at 111.76 88.9)
-		(uuid "a1f4c001-2b3d-4e5f-8a9b-0c1d2e3f4a01")
-	)
-	(no_connect
-		(at 111.76 91.44)
-		(uuid "a1f4c002-2b3d-4e5f-8a9b-0c1d2e3f4a02")
 	)
 	(no_connect
 		(at 111.76 93.98)
@@ -6877,19 +6877,18 @@
 			)
 		)
 	)
-	(global_label "SPI2_MOSI"
+	(global_label "PYRO1_FIRE"
 		(shape input)
-		(at 168.91 156.21 180)
-		(fields_autoplaced yes)
+		(at 111.76 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "1117590c-a7c1-49d2-8aef-a29722a3a3f1")
+		(uuid "13ae26e4-33f6-402d-8d7d-7de7108856a7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.0672 156.21 0)
+			(at 111.76 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6897,7 +6896,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 	)
@@ -6914,6 +6912,30 @@
 		(uuid "16ea8afc-68ac-4f64-992d-43ae640e9a12")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.0858 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SPI2_MISO"
+		(shape input)
+		(at 168.91 156.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "175ba51f-7d3d-47a5-bb8a-916e330de48e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 156.0672 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7067,28 +7089,6 @@
 			)
 		)
 	)
-	(global_label "PYRO1_SENSE"
-		(shape input)
-		(at 111.76 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3226dded-a739-4d82-9fd9-1e89489023c9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "I2C1_SDA"
 		(shape input)
 		(at 111.76 116.84 180)
@@ -7185,28 +7185,6 @@
 			)
 		)
 	)
-	(global_label "PYRO1_FIRE"
-		(shape input)
-		(at 111.76 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3cd508de-b3bc-4e7d-96a2-563925b209d1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "NRST"
 		(shape input)
 		(at 95.25 66.04 180)
@@ -7298,6 +7276,52 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "PYRO1_SENSE"
+		(shape input)
+		(at 147.32 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "512971f2-1dd8-45df-8541-2633039ebc70")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.32 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "SPI2_MOSI"
+		(shape input)
+		(at 168.91 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5229fc08-cc01-4dbc-a622-f54e0fe73fce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 156.0672 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -7550,54 +7574,6 @@
 		(uuid "79e96ea7-32fd-437d-a2e0-b4c05b0c3bbd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 156.1714 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SPI2_MISO"
-		(shape input)
-		(at 168.91 158.75 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "857cd258-4659-4492-8af9-51fa55e72f38")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.0672 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "PYRO2_FIRE"
-		(shape input)
-		(at 147.32 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "895cde0c-eb6a-4851-ad42-66aaf6becd2c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.5538 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7958,6 +7934,30 @@
 		(uuid "c5cc4af2-c9e5-409d-a749-30228facdd94")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 200.3357 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "PYRO2_FIRE"
+		(shape input)
+		(at 111.76 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c6b8f962-f4a6-4f25-94ba-8bd7730af032")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.5262 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11222,7 +11222,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 59.69 48.768 90)
 			(hide yes)
 			(show_name no)
